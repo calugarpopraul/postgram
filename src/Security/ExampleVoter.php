@@ -3,13 +3,13 @@
  * Created by PhpStorm.
  * User: raul
  * Date: 10/16/18
- * Time: 4:55 PM
+ * Time: 8:48 PM
  */
 
-namespace App\Service;
+namespace App\Security;
 
 
-class Mailer
+class ExampleVoter implements Voter
 {
 
 }
