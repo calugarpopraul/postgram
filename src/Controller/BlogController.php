@@ -63,6 +63,17 @@ class BlogController extends AbstractController
         return new Response($html);
     }
 
+
+    /**
+     * @Route("/homepage", name="blog_homepage")
+     */
+    public function homepage()
+    {
+        return new Response(
+            $this->twig->render('blog/homepage.html.twig')
+        );
+    }
+
     /**
      * @Route("/add", name="blog_add")
      */

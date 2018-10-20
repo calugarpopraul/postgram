@@ -6,6 +6,7 @@ Encore
     .setPublicPath('/build')
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
+    .enableSassLoader()
     //uncomment to create hashed filenames (e.g app.abc123.css)
     // .enableVersioning(Encore.isProduction())
 
