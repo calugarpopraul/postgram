@@ -1,8 +1,7 @@
 ###> symfony/framework-bundle ###
 /var/
 ###< symfony/framework-bundle ###
-/.idea/
-./idea/workspace.xml
+/.idea/*
 
 ###> symfony/web-server-bundle ###
 /.web-server-pid
