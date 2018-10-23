@@ -6,7 +6,6 @@ Encore
     .setPublicPath('/build')
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
-    .enableSassLoader()
     //uncomment to create hashed filenames (e.g app.abc123.css)
     // .enableVersioning(Encore.isProduction())
 
@@ -14,16 +13,17 @@ Encore
     .addEntry('js/app', ['./node_modules/jquery/dist/jquery.slim.js',
                          './node_modules/popper.js/dist/popper.min.js',
                          './node_modules/bootstrap/dist/js/bootstrap.min.js',
-                         './node_modules/holderjs/holder.min.js'
+                         './node_modules/holderjs/holder.min.js',
     ])
     .addStyleEntry('css/app', ['./node_modules/bootstrap/dist/css/bootstrap.min.css',
-                               './assets/css/app.css'])
+                               './assets/css/app.css',
+                                './assets/scss/app.scss',])
 
-    //uncomment if you use Sass/SCSS files
-    // .enableSassLoader()
+    // uncomment if you use Sass/SCSS files
+    .enableSassLoader()
 
     //uncomment for legacy applications that require $/jQuery as a global variable
-    // .autoProvidejQuery()
+    .autoProvidejQuery()
 ;
 
 module.exports = Encore.getWebpackConfig();

@@ -1,8 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
 
-{% extends 'base.html.twig' %}
-    {% block body %}
-
-
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/css/homepage.css') }}">
     {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <title>Happytweet</title>
+
+
+</head>
+
+<body id="page-top">
+    <div class="header" id="header">
+        <label for="show-menu" class="show-menu"  id="menuicon">MENU</label>
+        <input type="checkbox" id="show-menu" role="button">
+
+        <ul id="menu">
+            <li class="listaMeniu"><a href="#">ABOUT</a></li>
+            <li class="listaMeniu">
+                <a href="#">CONTACT</a>
+            </li>
+            <li class="listaMeniu">
+                <a href="#">LOG IN</a>
+            </li>
+            <li class="listaMeniu"><a href="#">REGISTER</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="content__container">
+            <p class="content__container__text">
+                Happy
+            </p>
+
+            <ul class="content__container__list">
+                <li class="content__container__list__item"> day !</li>
+                <li class="content__container__list__item"> post!</li>
+                <li class="content__container__list__item"> tweet !</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/new-age.min.js"></script>
+
+{% block javascripts %}
+    <script src="{{ asset('build/js/Main.js') }}"></script>
+{% endblock %}
+</html>
