@@ -1,0 +1,101 @@
+.header{
+    height: 65px;
+    background-color: transparent;
+    margin:-10px;
+}
+/*Strip the ul of padding and list styling*/
+#menu{
+    list-style-type:none;
+    padding:6PX;
+    float: right;
+    margin-top: 6px;
+}
+/*Create a horizontal list with spacing*/
+.listaMeniu {
+    display:inline-block;
+    margin-right: 40px;
+    padding: 0px;
+}
+/*Style for menu links*/
+.listaMeniu a {
+    display:block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: "Segoe UI Semibold";
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: -5px;
+}
+a:hover{
+    color: orange;
+    transform: scale(1.1);
+}
+
+
+/*Style for dropdown links*/
+.listaMeniu:hover menu a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+    color: orange;
+    transform: scale(1.1);
+
+}
+
+.show-menu {
+    display:block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-family: Consolas;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-top: -5px;
+    display: none;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+/*Responsive Styles*/
+@media screen and (max-width : 760px) {
+    /*Make dropdown links appear inline*/
+    ul {
+        position: static;
+        display: none;
+    }
+
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 120%;
+    }
+
+    /*Display 'show menu' link*/
+    .show-menu {
+        display: block;
+    }
+}
+#menuicon{
+    float: right;
+    margin-right: 5px;
+    font-size: 1.3em;
+    color: orange;
+}
+#menuicon:hover{
+    transform: scale(1.1);
+}
+
+
