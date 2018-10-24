@@ -37,10 +37,6 @@ class User implements UserInterface, \Serializable
      */
     private $fullName;
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
 
     /**
      * Returns the roles granted to the user.
@@ -120,7 +116,6 @@ class User implements UserInterface, \Serializable
         return serialize([
             $this->id,
             $this->username,
-            $this->fullName,
             $this->password
         ]);
     }
@@ -138,7 +133,46 @@ class User implements UserInterface, \Serializable
     {
         list($this->id,
             $this->username,
-            $this->fullName,
             $this->password) = unserialize($serialized);
+    }
+
+    /**
+     * @param mixed $username
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @param mixed $email
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * @param mixed $fullName
+     */
+    public function setFullName($fullName)
+    {
+        $this->fullName = $fullName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
     }
 }
