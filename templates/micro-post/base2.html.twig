@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/css/register.css') }}">
+        {#<link rel="stylesheet" href="{{ asset('build/css/header.css') }}">#}
+        <link rel="stylesheet" href="{{ asset('build/css/footer.css') }}">
+    {% endblock %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="build/js/Main.js"></script>
+    <title>Happytweet</title>
+
+
+</head>
+<body class="bg-light">
+{#{% block masterheader %}#}
+    {#{% include 'blog/header.html.twig' %}#}
+{#{% endblock %}#}
+<div class="container">
+    {% block body %}{% endblock %}
+
+</div>
+{% block masterfooter%}
+    {% include 'blog/footer.html.twig' %}
+{% endblock %}
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/new-age.min.js"></script>
+
+{% block javascripts %}
+    <script src="{{ asset('build/js/Main.js') }}"></script>
+{% endblock %}
+</body>

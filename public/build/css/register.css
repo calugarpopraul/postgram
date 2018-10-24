@@ -1,0 +1,87 @@
+body{
+    /*background-color: deeppink; pt browserele care nu suporta gradient*/
+
+    background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7b4397, #dc2430);
+
+
+
+}
+#regiterbox{
+    background-color: white;
+    width: 400px;
+    margin-top: 200px;
+    height: 550px;
+
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    -moz-box-shadow: 2px 7px 8px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
+    box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+#details{
+    outline:none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.3em;
+    text-align: center;
+    color: #848484;
+    padding: 10px;
+}
+/*#buton{*/
+    /*background-color: #6EA50C;*/
+    /*border: 3px solid #6EA50C;*/
+    /*border-radius: 3px;*/
+    /*color: white;width: 120px;*/
+/*}*/
+/*textarea:focus, input:focus{*/
+    /*outline: none;*/
+/*}*/
+/**:focus {*/
+    /*outline: none;*/
+/*}*/
+
+.form-control {
+    border: 0;
+    box-shadow: none;
+    background: transparent;
+    border-top: transparent !important;
+    border-left: transparent !important;
+    border-right: transparent !important;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    font-size: 1em;
+    font-color: #BDBDBD;
+    font-family: Arial;
+
+}
+
+ul {
+    padding: 7px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+li {
+    float: left;
+    width: auto;
+    list-style: outside none none;
+    padding: 3px;
+}
+
+button{
+    background-color: orange;
+    color :white;
+    border: 3px solid orange;
+    border-radius: 3px;
+    width: 120px;
+    height: 40px;
+    font-size: 1em;
+    margin-top: 40px;
+}

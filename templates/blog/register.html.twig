@@ -1,0 +1,58 @@
+{% extends 'micro-post/base2.html.twig' %}
+    {% block body %}
+
+
+
+        <div id="regiterbox">
+
+            {{ form_start(form) }}
+                <div id="details">
+
+
+                    <ul>
+                       <li><i class="fa fa-user prefix grey-text"></i>
+                       </li>
+                        <li>    {{ form_row(form.username) }} </li>
+
+
+                    </ul>
+                    <br>
+                    <ul>
+                        <li><i class="fa fa-envelope prefix grey-text my-icon"></i>
+                        </li>
+                        <li>    {{ form_row(form.email) }} </li>
+
+
+                    </ul>
+                    <br>
+                    <ul>
+                        <li><i class="fa fa-lock prefix grey-text"></i>
+                        </li>
+                        <li>    {{ form_row(form.plainPassword.first) }} </li>
+
+
+                    </ul>
+                    <br>
+                    <ul>
+                        <li><i class="fa fa-lock prefix grey-text"></i>
+                        </li>
+                        <li>   {{ form_row(form.plainPassword.second) }} </li>
+
+
+                    </ul>
+
+
+
+            <div class="modal-footer d-flex justify-content-center">
+                <button >Sign up</button>
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+
+
+
+
+
+
+    {% endblock %}

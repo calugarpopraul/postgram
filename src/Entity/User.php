@@ -21,7 +21,11 @@ class User implements UserInterface, \Serializable
      * @ORM\Column(type="string", length=50, unique=true)
      */
     private $username;
-
+    /**
+     * @Assert\NotBlank()
+     * @Assert\Length(max=320)
+     */
+    private $plainPassword;
     /**
      * @ORM\Column(type="string")
      */
@@ -71,6 +75,12 @@ class User implements UserInterface, \Serializable
      *
      * @return string The password
      */
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+
+
     public function getPassword()
     {
         $this->password;
@@ -87,6 +97,23 @@ class User implements UserInterface, \Serializable
     {
         return null;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFullName()
+    {
+        return $this->fullName;
+    }
+
 
     /**
      * Returns the username used to authenticate the user.
@@ -120,7 +147,9 @@ class User implements UserInterface, \Serializable
         return serialize([
             $this->id,
             $this->username,
+            $this->email,
             $this->fullName,
+            $this->plainPassword,
             $this->password
         ]);
     }
@@ -138,7 +167,11 @@ class User implements UserInterface, \Serializable
     {
         list($this->id,
             $this->username,
+            $this->email,
             $this->fullName,
+            $this->plainPassword,
             $this->password) = unserialize($serialized);
     }
 }
+
+
