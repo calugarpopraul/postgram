@@ -15,7 +15,7 @@ body{
     border: 1px solid lightgray;
     border-radius: 4px;
 
-    -webkit-box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
+
     box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
     padding: 30px;
     display: block;
