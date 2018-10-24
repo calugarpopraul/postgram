@@ -6,82 +6,95 @@ body{
 
 
 }
-#regiterbox{
+.box-shadow {
+
+    color: darkmagenta;
+}
+.main-login{
     background-color: white;
     width: 400px;
     margin-top: 200px;
     height: 550px;
 
     border: 1px solid lightgray;
-    border-radius: 4px;
-
-
-    box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
-    padding: 30px;
+    border-radius: 25px;
+    box-shadow:  5px 7px 8px #993A78;
+    /*padding: 30px;*/
     display: block;
     margin-left: auto;
     margin-right: auto;
 
 
 }
-#details{
+.form-group{
     outline:none;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: 1.3em;
+    font-size: 1.5em;
     text-align: center;
     color: #848484;
-    padding: 10px;
+    }
+
+textarea:focus, input:focus{
+    outline: none;
 }
-/*#buton{*/
-    /*background-color: #6EA50C;*/
-    /*border: 3px solid #6EA50C;*/
-    /*border-radius: 3px;*/
-    /*color: white;width: 120px;*/
-/*}*/
-/*textarea:focus, input:focus{*/
-    /*outline: none;*/
-/*}*/
-/**:focus {*/
-    /*outline: none;*/
-/*}*/
+*:focus {
+    outline: none;
+}
 
 .form-control {
     border: 0;
-    box-shadow: none;
+    box-shadow: none !important;
     background: transparent;
     border-top: transparent !important;
     border-left: transparent !important;
     border-right: transparent !important;
     border-bottom: 1px solid lightgray;
     outline: none;
-    font-size: 1em;
-    font-color: #BDBDBD;
-    font-family: Arial;
+
 
 }
 
 ul {
     padding: 7px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
+    /*justify-content: center;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    margin-left: 30px;
 }
 li {
     float: left;
     width: auto;
     list-style: outside none none;
-    padding: 3px;
+    /*padding: 3px;*/
+    font-size: 1em;
+    outline: none;
+    padding: 15px;
 }
 
-button{
-    background-color: orange;
+.button{
+    background-color: #DF7401;
     color :white;
-    border: 3px solid orange;
-    border-radius: 3px;
-    width: 120px;
+    border: 3px solid #DF7401;
+    border-radius: 25px;
+    width: 150px;
     height: 40px;
-    font-size: 1em;
-    margin-top: 40px;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right:auto;
+    position: relative;
+    font-family: Arial;
+}
+.wrapper {
+    text-align: center;
+}
+
+
+.main-center{
+    margin-top: 80px;
+    max-width: 400px;
+    padding: 40px 40px;
+
 }
