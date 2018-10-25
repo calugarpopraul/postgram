@@ -2,14 +2,23 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @UniqueEntity(fields="email", message="This e-mail is already user")
+ * @UniqueEntity(fields="username", message="This username is already used")
  */
 class User implements UserInterface, \Serializable
 {
+    const ROLE_USER = 'ROLE_USER';
+    const ROLE_ADMIN = 'ROLE_ADMIN';
+
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
@@ -19,47 +28,72 @@ class User implements UserInterface, \Serializable
 
     /**
      * @ORM\Column(type="string", length=50, unique=true)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=5, max=50)
      */
     private $username;
-    /**
-     * @Assert\NotBlank()
-     * @Assert\Length(max=320)
-     */
-    private $plainPassword;
+
     /**
      * @ORM\Column(type="string")
      */
     private $password;
 
     /**
+     * @Assert\NotBlank()
+     * @Assert\Length(min=4,max=4096)
+     */
+    private $plainPassword;
+
+    /**
      * @ORM\Column(type="string", length=254, unique=true)
+     * @Assert\NotBlank()
+     * @Assert\Email()
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=50)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=3)
      */
     private $fullName;
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
+    /**
+     * @ORM\OneToMany(targetEntity="MicroPost", mappedBy="user")
+     */
+    private $posts;
 
     /**
-     * Returns the roles granted to the user.
-     *
-     *     public function getRoles()
-     *     {
-     *         return array('ROLE_USER');
-     *     }
-     *
-     * Alternatively, the roles might be stored on a ``roles`` property,
-     * and populated in any number of different ways when the user object
-     * is created.
-     *
-     * @return (Role|string)[] The user roles
+     * @var array
+     * @ORM\Column(type="simple_array")
      */
+    private $roles;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="following")
+     */
+    private $followers;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\User", inversedBy="followers")
+     * @ORM\JoinTable(name="following",
+     *     joinColumns={
+     *          @ORM\JoinColumn(name="user_id", referencedColumnName="id")
+     *      },
+     *     inverseJoinColumns={
+     *          @ORM\JoinColumn(name="following_user_id", referencedColumnName="id")
+     *      }
+     *    )
+     */
+    private $following;
+
+    public function __construct()
+    {
+        $this->posts = new ArrayCollection();
+        $this->followers = new ArrayCollection();
+        $this->following = new ArrayCollection();
+    }
+
     public function getRoles()
     {
         return [
@@ -68,34 +102,53 @@ class User implements UserInterface, \Serializable
     }
 
     /**
-     * Returns the password used to authenticate the user.
-     *
-     * This should be the encoded password. On authentication, a plain-text
-     * password will be salted, encoded, and then compared to this value.
-     *
-     * @return string The password
+     * @param array $roles
+     * @return User
      */
-    public function getPlainPassword()
+    public function setRoles(array $roles)
     {
-        return $this->plainPassword;
+        $this->roles = $roles;
+        return $this;
     }
+
 
 
     public function getPassword()
     {
-        $this->password;
+        return $this->password;
     }
 
-    /**
-     * Returns the salt that was originally used to encode the password.
-     *
-     * This can return null if the password was not encoded using a salt.
-     *
-     * @return string|null The salt
-     */
     public function getSalt()
     {
         return null;
+    }
+
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    public function eraseCredentials()
+    {
+
+    }
+
+    public function serialize()
+    {
+        return serialize([
+            $this->id,
+            $this->username,
+            $this->fullName,
+            $this->password
+        ]);
+    }
+
+    public function unserialize($serialized)
+    {
+        list($this->id,
+            $this->username,
+            $this->fullName,
+            $this->password) = unserialize($serialized);
     }
 
     /**
@@ -107,6 +160,14 @@ class User implements UserInterface, \Serializable
     }
 
     /**
+     * @param mixed $email
+     */
+    public function setEmail($email): void
+    {
+        $this->email = $email;
+    }
+
+    /**
      * @return mixed
      */
     public function getFullName()
@@ -114,64 +175,79 @@ class User implements UserInterface, \Serializable
         return $this->fullName;
     }
 
-
     /**
-     * Returns the username used to authenticate the user.
-     *
-     * @return string The username
+     * @param mixed $fullName
      */
-    public function getUsername()
+    public function setFullName($fullName): void
     {
-        $this->username;
+        $this->fullName = $fullName;
     }
 
     /**
-     * Removes sensitive data from the user.
-     *
-     * This is important if, at any given point, sensitive information like
-     * the plain-text password is stored on this object.
+     * @param mixed $username
      */
-    public function eraseCredentials()
+    public function setUsername($username): void
     {
-        // TODO: Implement eraseCredentials() method.
+        $this->username = $username;
     }
 
     /**
-     * String representation of object
-     * @link https://php.net/manual/en/serializable.serialize.php
-     * @return string the string representation of the object or null
-     * @since 5.1.0
+     * @param mixed $password
      */
-    public function serialize()
+    public function setPassword($password): void
     {
-        return serialize([
-            $this->id,
-            $this->username,
-            $this->email,
-            $this->fullName,
-            $this->plainPassword,
-            $this->password
-        ]);
+        $this->password = $password;
     }
 
     /**
-     * Constructs the object
-     * @link https://php.net/manual/en/serializable.unserialize.php
-     * @param string $serialized <p>
-     * The string representation of the object.
-     * </p>
-     * @return void
-     * @since 5.1.0
+     * @return mixed
      */
-    public function unserialize($serialized)
+    public function getId()
     {
-        list($this->id,
-            $this->username,
-            $this->email,
-            $this->fullName,
-            $this->plainPassword,
-            $this->password) = unserialize($serialized);
+        return $this->id;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+
+    /**
+     * @param mixed $plainPassword
+     * @return User
+     */
+    public function setPlainPassword($plainPassword)
+    {
+        $this->plainPassword = $plainPassword;
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPosts()
+    {
+        return $this->posts;
+    }
+
+    /**
+     * @return Collection
+     */
+    public function getFollowers()
+    {
+        return $this->followers;
+    }
+
+    /**
+     * @return Collection
+     */
+    public function getFollowing()
+    {
+        return $this->following;
+    }
+
+
 }
-
-
