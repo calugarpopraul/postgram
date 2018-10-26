@@ -1,31 +1,71 @@
 {% extends 'micro-post/base2.html.twig' %}
 
-{% block body %}
+
+{% block body%}
     {% if error %}
         <div class="alert alert-danger">
             {{ error.messageKey|trans(error.messageData, 'security') }}
         </div>
     {% endif %}
 
+    <link rel="stylesheet" href="{{ asset('build/css/login.css')}}">
+    <link href= " https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
-    <form action="{{ path('security_login') }}" method="post">
-        <div>
-            <div class="form-group">
-                <label class="form-control-label required" for="username">Username</label>
-                <input type="text" id="username" name="_username" required="required" class="form-control"
-                       value="{{ last_username }}">
+
+        <div class="container" >
+            <form action="{{ path('security_login') }}" method="post">
+
+            <div class="col-md-4 col-md-offset-4" id="wrapper">
+
+
+
+                <a href="#" class="fb btn1">
+                    <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                </a>
+
+                <br>
+
+                <a href="#" class="google btn1"><i class="fa fa-google fa-fw">
+                    </i> Login with Google+
+                </a>
+                <br>
+                <p>or</p>
+
+                <div class="row">
+                    <div class="col-25">
+                        <i class="fa fa-user prefix grey-text"></i>
+                    </div>
+                    <div class="col-75">
+
+
+                        <input type="text" id="username" name="_username" placeholder="Username" required="required" class="form-control"
+                               value="{{ last_username }}">
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <i class="fa fa-lock prefix grey-text"></i>
+                        </div>
+                    <div class="col-75">
+
+                        <input type="password" id="password" placeholder="Password" name="_password" required="required" class="form-control">
+                    </div>
+                    </div>
+                     <br>
+                <div class="row">
+                    <input type="submit" value="Sign in" id="button">
+                </div>
+
+
 
             </div>
-            <div class="form-group">
-                <label class="form-control-label required" for="password">Password</label>
-                <input type="password" id="password" name="_password" required="required" class="form-control">
-            </div>
-            <div class="form-group">
-                <button type="submit" id="Login" name="Login" class="btn-secondary btn">Login</button>
-            </div>
-            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
-            <input type="hidden" name="_target_path" value="{{ app.request.get('redirect_to') }}">
+            </form>
         </div>
-    </form>
+
+
 {% endblock %}

@@ -1,22 +1,18 @@
-#footer{
+
+.mini-footer {
     position: fixed;
     left: 0px;
     bottom: 0;
     height: 50px;
     width: 100%;
     background-color: #222222;
+    text-align: center;
+    padding: 5px 0;
+
 }
-.copyright {
-    font-family: Arial,
-    "Helvetica Neue",
-    Helvetica,
-    sans-serif;
-    color: gray;
-    /*margin-left: 42%;*/
-
-    font-size: 12px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-
+.mini-footer p {
+    margin:0;
+    line-height:26px;
+    font-size:13px;
+    color:#999
 }
