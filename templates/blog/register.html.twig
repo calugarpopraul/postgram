@@ -15,43 +15,98 @@
 
            <div class="col-md-4 col-md-offset-4" id="wrapper">
 
+               {{ form_start(form) }}
+
                <div class="row">
                    <div class="col-25">
                        <i class="fa fa-user prefix grey-text"></i>
                    </div>
                    <div class="col-75">
-                       {{ form_row(form.username) }}
+                   {{ form_row(form.username) }}
                    </div>
                </div>
+
                <div class="row">
                    <div class="col-25">
-                       <i class="fa fa-envelope prefix grey-text my-icon"></i>
+                         <i class="fa fa-envelope prefix grey-text my-icon"></i>
                    </div>
                    <div class="col-75">
-                       {{ form_row(form.email) }}
+                   {{ form_row(form.email) }}
                    </div>
                </div>
+
+               <div class="row">
+                   <div class="col-25">
+                       <i class="fa fa-user prefix grey-text"></i>
+                   </div>
+                   <div class="col-75">
+                       {{ form_row(form.fullName) }}
+                   </div>
+               </div>
+
+               <div class="row">
+                   <div class="col-25">
+                        <i class="fa fa-lock prefix grey-text"></i>
+                   </div>
+                   <div class="col-75">
+                   {{ form_row(form.plainPassword.first) }}
+                   </div>
+               </div>
+
                <div class="row">
                    <div class="col-25">
                        <i class="fa fa-lock prefix grey-text"></i>
                    </div>
                    <div class="col-75">
-                       {{ form_row(form.plainPassword.first) }}
+                       {{ form_row(form.plainPassword.second) }}
                    </div>
-               </div>
-               <div class="row">
-               <div class="col-25">
-                   <i class="fa fa-lock prefix grey-text "></i>
-               </div>
-               <div class="col-75">
-                   {{ form_row(form.plainPassword.second) }}
-               </div>
                </div>
 
                <div class="row">
                    <input type="submit" value="Sign up" id="button">
                </div>
+
+               {#<div class="row">#}
+                   {#<div class="col-25">#}
+                       {#<i class="fa fa-user prefix grey-text"></i>#}
+                   {#</div>#}
+                   {#<div class="col-75">#}
+                       {#{{ form_row(form.username) }}#}
+                   {#</div>#}
+               {#</div>#}
+               {#<div class="row">#}
+                   {#<div class="col-25">#}
+                       {#<i class="fa fa-envelope prefix grey-text my-icon"></i>#}
+                   {#</div>#}
+                   {#<div class="col-75">#}
+                       {#{{ form_row(form.email) }}#}
+                   {#</div>#}
+               {#</div>#}
+               {#<div class="row">#}
+                   {#<div class="col-25">#}
+                       {#<i class="fa fa-lock prefix grey-text"></i>#}
+                   {#</div>#}
+                   {#<div class="col-75">#}
+                       {#{{ form_row(form.plainPassword.first) }}#}
+                   {#</div>#}
+               {#</div>#}
+               {#<div class="row">#}
+               {#<div class="col-25">#}
+                   {#<i class="fa fa-lock prefix grey-text "></i>#}
+               {#</div>#}
+               {#<div class="col-75">#}
+                   {#{{ form_row(form.plainPassword.second) }}#}
+               {#</div>#}
+               {#</div>#}
+
+               {#<div class="row">#}
+                   {#<input type="submit" value="Sign up" id="button">#}
+               {#</div>#}
+
+               {{ form_end(form) }}
+
            </div>
+
    </div>
 
 

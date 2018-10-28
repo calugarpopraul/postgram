@@ -52,7 +52,7 @@ class AppFixtures extends Fixture
         $user->setFullName('John Doe');
         $user->setEmail('john_doe@doe.com');
         $user->setPassword($this->passwordEncoder->encodePassword($user, 'john123'));
-        $user->setRoles(['ROLE_USERS']);
+        $user->setRoles(['ROLE_USER']);
         $manager->persist($user);
         $manager->flush();
     }

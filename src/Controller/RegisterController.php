@@ -34,12 +34,12 @@ class RegisterController extends Controller
     /**
      * @Route("/register", name="user_register")
      */
-    public function register(Request $request, UserPasswordEncoderInterface $passwordEncoder)
+    public function register(UserPasswordEncoderInterface $passwordEncoder, Request $request)
     {
         $user = new User();
         $form = $this->createForm(UserRegistrationType::class, $user);
-
         $form->handleRequest($request);
+
         if ($form->isSubmitted() && $form->isValid()) {
             $password = $passwordEncoder->encodePassword(
                 $user,
