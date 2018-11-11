@@ -4,13 +4,24 @@ body{
     background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7b4397, #dc2430);
 
 
-
 }
 
+p {
+    color:whitesmoke;
+}
 
+div a {
+    color:orange;
+    text-align: right;
+}
 
+div a:hover {
+    color: whitesmoke;
+}
 
-
+div h5 {
+    color:lightgrey;
+}
 
 
 

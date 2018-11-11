@@ -3,6 +3,14 @@
     background-color: transparent;
     margin:-10px;
 }
+
+nav a{
+    color:white;
+}
+nav a:hover{
+    color: orange;
+    transform: scale(1.1);
+}
 /*Strip the ul of padding and list styling*/
 #menu{
     list-style-type:none;

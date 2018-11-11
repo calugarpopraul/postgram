@@ -9,6 +9,7 @@
 namespace App\Controller;
 
 use App\Entity\MicroPost;
+use App\Entity\User;
 use App\Form\MicroPostType;
 use App\Repository\MicroPostRepository;
 use Doctrine\ORM\EntityManager;
@@ -144,6 +145,21 @@ class MicroPostController extends Controller
             $this->twig->render('micro-post/add.html.twig',
                 ['form' => $form->createView()])
         );
+    }
+
+    /**
+     * @Route("/user/{username}", name="micro_post_user")
+     */
+    public function userPosts(User $userWithPosts)
+    {
+        return $this->render('micro-post/user-posts.html.twig', [
+            'posts' => $this->microPostRepository->findBy(
+                ['user' => $userWithPosts],
+                ['time' => 'DESC']
+            ),
+            'user' => $userWithPosts
+            //'posts' => $userWithPosts->getPosts()
+        ]);
     }
 
     /**
