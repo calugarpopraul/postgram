@@ -34,17 +34,22 @@
     {% include 'blog/footer.html.twig' %}
 {% endblock %}
 
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/new-age.min.js"></script>
 
 {% block javascripts %}
     <script src="{{ asset('build/js/Main.js') }}"></script>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="holder.js"></script>
+    <script>
+        Holder.add_theme("big", { background: #FF0000, foreground: #fff, size: 20 })
+    </script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/new-age.min.js"></script>
 {% endblock %}
 </body>
 </html>

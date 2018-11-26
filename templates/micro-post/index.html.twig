@@ -14,22 +14,28 @@
 
     <br/>
     <div class="border-bottom border-gray pb-2 mb-0">
-        <h5>Recent updates</h5>
-        {% if is_granted('ROLE_USER') %}
-            <h6><a class="nav-link" href="{{ path('micro_post_add') }}">Add new</a></h6>
-        {% endif %}
-    </div>
+    <h5>Recent updates</h5>
+    {#{% if is_granted('ROLE_USER') %}#}
+    {#<h6><a class="nav-link" href="{{ path('micro_post_add') }}">Add new</a></h6>#}
+
+    {#</div>#}
+
+    {#{% endif %}#}
 
 
     {% for post in posts %}
-        <a href="{{ path('micro_post_post', {'id': post.id}) }}">
-            {{ include('micro-post/raw-post.html.twig', {'post': post}) }}
-        </a>
+
+        {{ include('micro-post/raw-post.html.twig', {'post': post}) }}
 
         <small class="d-block text-right mt-3">
-            <a href="{{ path('micro_post_edit', {'id': post.id}) }}">Edit</a>
-            <a href="{{ path('micro_post_delete', {'id': post.id}) }}">Delete</a>
+            {% if is_granted('edit', post) %}
+                <a href="{{ path('micro_post_edit', {'id': post.id}) }}">Edit</a>
+            {% endif %}
+            {% if is_granted('delete', post) %}
+                <a href="{{ path('micro_post_delete', {'id': post.id}) }}">Delete</a>
+            {% endif %}
         </small>
 
     {% endfor %}
+
 {% endblock %}

@@ -11,7 +11,7 @@ p {
 }
 
 div a {
-    color:orange;
+    color:lightgrey;
     text-align: right;
 }
 
@@ -21,6 +21,11 @@ div a:hover {
 
 div h5 {
     color:lightgrey;
+}
+
+img {
+    width: 32px;
+    height: 32px;
 }
 
 

@@ -22,7 +22,7 @@ use Twig_Environment;
 
 
 /**
- * @Route("/blog")
+ * @Route("/")
  */
 class BlogController extends AbstractController
 {
@@ -70,7 +70,7 @@ class BlogController extends AbstractController
     public function homepage()
     {
         return new Response(
-            $this->twig->render('blog/homepage.html.twig')
+            $this->twig->render('base.html.twig')
         );
     }
 

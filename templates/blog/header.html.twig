@@ -3,6 +3,14 @@
        href="{{ path('micro_post_index') }}">Micro Post App</a>
 
     <div class="w-100 order-1 order-md-0">
+        <ul class="navbar-nav px-3">
+            {% if is_granted('ROLE_USER') %}
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link" href="{{ path('micro_post_add') }}">Add new</a>
+                </li>
+            {% endif %}
+        </ul>
+
     </div>
 
     <div class="order-2 order-md-1">
@@ -19,11 +27,11 @@
             {% else %}
                 <li class="nav-item text-nowrap">
                     <a class="nav-link"
-                       href="{{ path('security_login') }}">Contact</a>
+                       href="{{ path('blog_homepage') }}">Contact</a>
                 </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link"
-                       href="{{ path('security_login') }}">About</a>
+                       href="{{ path('blog_homepage') }}">About</a>
                 </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link"
@@ -31,7 +39,7 @@
                 </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link"
-                       href="{{ path('security_login') }}">Register</a>
+                       href="{{ path('user_register') }}">Register</a>
                 </li>
             {% endif %}
         </ul>

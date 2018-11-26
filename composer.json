@@ -9,14 +9,17 @@
         "sensio/framework-extra-bundle": "^5.2",
         "symfony/asset": "*",
         "symfony/console": "*",
+        "symfony/expression-language": "*",
         "symfony/flex": "^1.1",
         "symfony/form": "*",
         "symfony/framework-bundle": "*",
         "symfony/maker-bundle": "^1.8",
         "symfony/orm-pack": "^1.0",
+        "symfony/security": "*",
         "symfony/security-bundle": "*",
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
+        "symfony/webpack-encore-bundle": "^1.0",
         "symfony/yaml": "*"
     },
     "require-dev": {

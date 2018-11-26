@@ -25,6 +25,7 @@ class ComposerStaticInit1f25484b1da29144b266f82cceccac92
         ),
         'S' => 
         array (
+            'Symfony\\WebpackEncoreBundle\\' => 28,
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Flex\\' => 13,
@@ -45,6 +46,7 @@ class ComposerStaticInit1f25484b1da29144b266f82cceccac92
             'Symfony\\Component\\Form\\' => 23,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\Filesystem\\' => 29,
+            'Symfony\\Component\\ExpressionLanguage\\' => 37,
             'Symfony\\Component\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Dotenv\\' => 25,
             'Symfony\\Component\\DependencyInjection\\' => 38,
@@ -112,6 +114,10 @@ class ComposerStaticInit1f25484b1da29144b266f82cceccac92
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\WebpackEncoreBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/webpack-encore-bundle/src',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
@@ -192,6 +198,10 @@ class ComposerStaticInit1f25484b1da29144b266f82cceccac92
         'Symfony\\Component\\Filesystem\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/filesystem',
+        ),
+        'Symfony\\Component\\ExpressionLanguage\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/expression-language',
         ),
         'Symfony\\Component\\EventDispatcher\\' => 
         array (

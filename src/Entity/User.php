@@ -59,7 +59,7 @@ class User implements UserInterface, \Serializable
     private $fullName;
 
     /**
-     * @ORM\OneToMany(targetEntity="MicroPost", mappedBy="user")
+     * @ORM\OneToMany(targetEntity="App\Entity\MicroPost", mappedBy="user")
      */
     private $posts;
 
