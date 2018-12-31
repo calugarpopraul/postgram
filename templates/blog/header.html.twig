@@ -1,24 +1,25 @@
-<nav class="navbar bg-transparent navbar-expand-md sticky-top bg-dark p-0">
+<nav class="navbar navbar-expand-md sticky-top bg-dark p-0">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0"
-       href="{{ path('micro_post_index') }}">Micro Post App</a>
+       href="{{ path('micro_post_index') }}" id="company_name">Happy Tweet</a>
 
     <div class="w-100 order-1 order-md-0">
-        <ul class="navbar-nav px-3">
-            {% if is_granted('ROLE_USER') %}
-                <li class="nav-item text-nowrap">
-                    <a class="nav-link" href="{{ path('micro_post_add') }}">Add new</a>
-                </li>
-            {% endif %}
-        </ul>
 
     </div>
 
     <div class="order-2 order-md-1">
         <ul class="navbar-nav px-3">
             {% if is_granted('ROLE_USER') %}
+                <li class="nav-item text-nowrap border-right border-secondary">
+                    <a class="nav-link" id="notifications-link" href="{{ path('notification_all') }}">
+                        Notifications
+                        <span class="badge badge-light" id="notification-count">
+                            <i class="fa fa-circle-o-notch fa-spin fa-1x fa-fw"></i>
+                        </span>
+                    </a>
+                </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link"
-                       href="#">{{ app.user.fullName }}</a>
+                       href="{{ path('micro_post_user',{'username':app.user.username}) }}">{{ app.user.fullName }}</a>
                 </li>
                 <li class="nav-item text-nowrap">
                     <a class="nav-link"
@@ -45,3 +46,26 @@
         </ul>
     </div>
 </nav>
+
+{% block javascripts %}
+    {% if is_granted('ROLE_USER') %}
+        <script>
+            function fetchNotificationCount() {
+                fetch(
+                    '{{ path('notification_unread') }}',
+                    {'credentials': 'include'}
+                ).then(function (response) {
+                    response.json().then(function (json) {
+                        document.getElementById('notification-count').innerText = json.count;
+                        setTimeout(fetchNotificationCount, 5000);
+                    });
+                }).catch(function (err) {
+
+                });
+            }
+
+            fetchNotificationCount();
+        </script>
+    {% endif %}
+
+{% endblock%}

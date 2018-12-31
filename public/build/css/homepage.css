@@ -1,26 +1,34 @@
 body{
     /*background-color: deeppink; pt browserele care nu suporta gradient*/
 
-    background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7b4397, #dc2430);
-
-
+    /*background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7da4db, #004085);*/
 }
 
 p {
-    color:whitesmoke;
+    color: #545b62;
+}
+
+.container-fluid {
+    background-color: lightgrey;
+    border: lightgrey;
+    border-radius: 14px;
+    margin-top: 12px;
 }
 
 div a {
-    color:lightgrey;
+    color: #545b62;
     text-align: right;
+    font-size: 16px;
 }
 
 div a:hover {
-    color: whitesmoke;
+    color: deeppink;
 }
 
 div h5 {
-    color:lightgrey;
+    color:#818182;
+    font-size: 32px;
+    margin-bottom: -15px;
 }
 
 img {
@@ -28,7 +36,112 @@ img {
     height: 32px;
 }
 
+#edit_button {
+    width: 50px;
+    height: 30px;
+    color: palevioletred;
+    font-size: 16px;
+    background-color: whitesmoke;
+    border: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+}
 
+#delete_button {
+    width: 60px;
+    height: 30px;
+    color: whitesmoke;
+    font-size: 16px;
+    background-color: #ff2327;
+    border: none;
+    display: inline-block;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn-secondary {
+    width: 60px;
+    height: 35px;
+}
+
+.btn-danger {
+    width: 70px;
+    height: 35px;
+}
+
+.btn-outline-dark {
+    width: 100px;
+    height: 40px;
+    margin-left: 84%;
+}
+
+/*For homepage text */
+
+@-webkit-keyframes focus-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+@keyframes focus-in-contract-bck {
+    0% {
+        letter-spacing: 1em;
+        -webkit-transform: translateZ(300px);
+        transform: translateZ(300px);
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(12px);
+        transform: translateZ(12px);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+.focus-in-contract-bck {
+    -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+h1 {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-contract-bck 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    color: lightgrey;
+}
+
+
+.card-group h5 {
+    color: lightslategrey;
+}
+
+.card-group a {
+    color: darkblue;
+}
+
+.card-group a:hover {
+    color: lightslategrey;
+    font-size: 1.1em;
+}
 
 
 

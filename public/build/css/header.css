@@ -1,18 +1,28 @@
-.header{
-    height: 65px;
-    background-color: transparent;
-    margin:-10px;
+/*.header {*/
+    /*height: 65px;*/
+    /*background-color: black;*/
+    /*margin:-10px;*/
+/*}*/
+
+nav a {
+    color: whitesmoke;
+    font-size: 20px;
+
 }
 
-nav a{
-    color:white;
-}
 nav a:hover{
-    color: orange;
-    transform: scale(1.1);
+    color: hotpink;
+    transform: scale(1.2);
 }
+
+#company_name {
+    font-size: 26px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
 /*Strip the ul of padding and list styling*/
-#menu{
+#menu {
     list-style-type:none;
     padding:6PX;
     float: right;
@@ -36,10 +46,10 @@ nav a:hover{
     font-size: 1.1em;
     margin-top: -5px;
 }
-a:hover{
-    color: orange;
-    transform: scale(1.1);
-}
+/*a:hover{*/
+    /*color: orange;*/
+    /*transform: scale(1.1);*/
+/*}*/
 
 
 /*Style for dropdown links*/
@@ -104,4 +114,12 @@ input[type=checkbox]:checked ~ #menu{
 }
 #menuicon:hover{
     transform: scale(1.1);
+}
+
+#notifications-link {
+    color: lightgrey;
+}
+
+#notifications-link:hover {
+    border-right: none;
 }
