@@ -70,7 +70,7 @@ class BlogController extends AbstractController
     public function homepage()
     {
         return new Response(
-            $this->twig->render('base.html.twig')
+            $this->twig->render('blog/homepage.html.twig')
         );
     }
 

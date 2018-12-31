@@ -37,7 +37,7 @@ class LikesController extends Controller
 
         return new JsonResponse([
             'count' => $microPost->getLikedBy()->count()
-        ]);
+            ]);
     }
 
     /**
