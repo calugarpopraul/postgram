@@ -20,7 +20,7 @@ class JsonManifestVersionStrategyTest extends TestCase
     {
         $strategy = $this->createStrategy('manifest-valid.json');
 
-        $this->assertEquals('main.123abc.js', $strategy->getVersion('main.js'));
+        $this->assertEquals('main.123abc.js', $strategy->getVersion('homepage.js'));
     }
 
     public function testApplyVersion()
@@ -43,7 +43,7 @@ class JsonManifestVersionStrategyTest extends TestCase
     public function testMissingManifestFileThrowsException()
     {
         $strategy = $this->createStrategy('non-existent-file.json');
-        $strategy->getVersion('main.js');
+        $strategy->getVersion('homepage.js');
     }
 
     /**
@@ -53,7 +53,7 @@ class JsonManifestVersionStrategyTest extends TestCase
     public function testManifestFileWithBadJSONThrowsException()
     {
         $strategy = $this->createStrategy('manifest-invalid.json');
-        $strategy->getVersion('main.js');
+        $strategy->getVersion('homepage.js');
     }
 
     private function createStrategy($manifestFilename)

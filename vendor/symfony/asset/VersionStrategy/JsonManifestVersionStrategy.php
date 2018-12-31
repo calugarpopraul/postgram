@@ -16,11 +16,11 @@ namespace Symfony\Component\Asset\VersionStrategy;
  *
  * For example, the manifest file might look like this:
  *     {
- *         "main.js": "main.abc123.js",
+ *         "homepage.js": "main.abc123.js",
  *         "css/styles.css": "css/styles.555abc.css"
  *     }
  *
- * You could then ask for the version of "main.js" or "css/styles.css".
+ * You could then ask for the version of "homepage.js" or "css/styles.css".
  */
 class JsonManifestVersionStrategy implements VersionStrategyInterface
 {
