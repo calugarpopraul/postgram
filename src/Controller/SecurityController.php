@@ -9,6 +9,8 @@
 namespace App\Controller;
 
 use App\Form\LoginType;
+use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -65,6 +67,33 @@ class SecurityController extends AbstractController
     {
         return $this->render('security/login.html.twig',[
         ]);
+    }
+
+    /**
+     * @Route("/confirm/{token}", name="security_confirm")
+     */
+    public function confirm(
+        string $token,
+        UserRepository $userRepository,
+        EntityManagerInterface $entityManager)
+    {
+        $user = $userRepository->findOneBy([
+            'confirmationToken' => $token
+        ]);
+
+        if (null !== $user) {
+            $user->setEnabled(true);
+            $user->setConfirmationToken('');
+
+            $entityManager->flush();
+        }
+
+        return new Response($this->twig->render(
+            'security/confirmation.html.twig',
+            [
+                'user' => $this->getUser()
+            ])
+        );
     }
 
 }
