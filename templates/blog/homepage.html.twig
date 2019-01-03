@@ -1,6 +1,49 @@
-{% extends 'base.html.twig' %}
+{% extends 'micro-post/base2.html.twig' %}
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset('build/css/header.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/css/homepage.css') }}">
+{% endblock %}
     {% block body %}
 
-        <h1> Happy Tweet </h1>
+        <div class="split left">
+            <div class="centered">
+
+                <p></p>
+            </div>
+        </div>
+
+        <div class="split right">
+            <div class="centered">
+                 <ul>
+                     <button>
+                        <li class="nav-item text-nowrap">
+                            <a class="nav-link"
+                               href="{{ path('blog_homepage') }}">Contact</a>
+                        </li>
+                     </button>
+                     <button>
+                        <li class="nav-item text-nowrap">
+                            <a class="nav-link"
+                               href="{{ path('blog_homepage') }}">About</a>
+                        </li>
+                     </button>
+                     <button>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="{{ path('security_login') }}">Sign in</a>
+                </li>
+                     </button>
+                     <button>
+                <li class="nav-item text-nowrap">
+                    <a class="nav-link"
+                       href="{{ path('user_register') }}">Register</a>
+                </li>
+                     </button>
+                 </ul>
+                <p></p>
+            </div>
+        </div>
 
     {% endblock %}

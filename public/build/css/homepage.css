@@ -1,13 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Anton);
 body{
     /*background-color: deeppink; pt browserele care nu suporta gradient*/
 
-    /*background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7da4db, #004085);*/
+
 }
 
 p {
     color: #545b62;
 }
+/* Split the screen in half */
+.split {
+    height: calc(100% - 80px);
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display:block ;
+    justify-content: center;
+    align-content: center;
+    list-style-type:none;
+}
+li{
+    list-style-type:none;
+}
+a {
+    color: #dc2430;
+    font-size: 1.3em;
+ text-decoration: none;
+}
+a:hover{
+    color: #dc2430;
+    transform: scale(1.2);
+}
 
+.left {
+    left: 0;
+    background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7b4397, #dc2430);
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: #222222 ;
+
+}
+button{
+    background-color: #222222;
+
+    border: 3px solid #dc2430;
+    border-radius: 28px;
+    width: 40%;
+    height: 55px;
+
+    margin-top: 80px;
+    margin-left:150px;
+    margin-right:auto;
+
+    position: relative;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
 .container-fluid {
     background-color: lightgrey;
     border: lightgrey;
@@ -15,15 +70,15 @@ p {
     margin-top: 12px;
 }
 
-div a {
-    color: #545b62;
-    text-align: right;
-    font-size: 16px;
-}
+/*div a {*/
+    /*color: #545b62;*/
+    /*text-align: right;*/
+    /*font-size: 16px;*/
+/*}*/
 
-div a:hover {
-    color: deeppink;
-}
+/*div a:hover {*/
+    /*color: deeppink;*/
+/*}*/
 
 div h5 {
     color:#818182;
@@ -143,7 +198,12 @@ h1 {
     font-size: 1.1em;
 }
 
-
+/*body {*/
+    /*height: 100vh;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+    /*background: #4a2667;*/
+/*}*/
 
 
 

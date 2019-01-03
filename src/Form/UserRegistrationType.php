@@ -26,15 +26,42 @@ class UserRegistrationType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('username', TextType::class)
-            ->add('email', EmailType::class)
-            ->add('fullName', TextType::class)
+            ->add('username', TextType::class,
+                ['label' => false,
+                'attr' => [
+                    'id' => 'username',
+                    'placeholder' => '  Username'
+                ],
+            ])
+            ->add('email', EmailType::class,
+               ['label' => false,
+                  'attr' => [
+                      'id' => 'username',
+                      'placeholder' => '  Email'
+                  ],
+            ])
+            ->add('fullName', TextType::class,
+                ['label' => false,
+                    'attr' => [
+                        'id' => 'username',
+                        'placeholder' => '  Full name'
+                    ],
+                ])
+
             ->add('plainPassword', RepeatedType::class, [
                 'type' =>PasswordType::class,
-                'first_options' => ['label' => 'Password'],
-                'second_options' => ['label' => 'Repeated password']
-            ])
-            ->add('Sign up', SubmitType::class);
+                'first_options' => ['label' => false,
+                    'attr' => [
+                        'id' => 'password',
+                        'placeholder' => 'Password'
+                    ]],
+                'second_options' => ['label' => false,
+                    'attr' => [
+                        'id' => 'password',
+                        'placeholder' => ' Repeat password'
+                    ]]
+            ]);
+//            ->add('Sign up', SubmitType::class);
     }
 
     public function configureOptions(OptionsResolver $resolver)
