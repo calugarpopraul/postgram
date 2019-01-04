@@ -115,3 +115,167 @@ textarea:focus, input:focus{
     border: 3px solid #7b4397;
     font-weight: bold;
 }
+@media screen and (max-width: 618px) {
+    #wrapper{
+
+        width: 100%;
+        height: 60%;
+        padding: 10px 10px ;
+        margin-bottom: 20%;
+
+
+
+
+    }
+    .col-75{
+        font-size: 1.3em;
+        width:70% ;
+    }
+    .col-25{
+        width: 3%;
+        padding-right: 2px;
+    }
+    .row{
+        padding-bottom: 7px;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+}
+@media screen and (device-aspect-ratio: 2/3) {
+    #wrapper{
+        margin-top: 10%;
+        width: 100%;
+        height: 60%;
+        padding: 10px 10px ;
+        margin-bottom: 20%;
+
+
+
+    }
+    .col-75{
+        font-size: 1.3em;
+        width:70% ;
+    }
+    .col-25{
+        width: 3%;
+        padding-right: 2px;
+    }
+    .row{
+        padding-bottom: 5px;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+
+}
+@media screen and (device-aspect-ratio: 40/71) {
+    #wrapper{
+        margin-top: 10%;
+        width: 100%;
+        height: 60%;
+        padding: 10px 10px ;
+        margin-bottom: 20%;
+
+
+
+    }
+    .col-75{
+        font-size: 1.3em;
+        width:70% ;
+    }
+    .col-25{
+        width: 3%;
+        padding-right: 2px;
+    }
+    .row{
+        padding-bottom: 5px;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+
+}
+@media screen and (device-aspect-ratio: 375/667) {
+    #wrapper{
+        margin-top: 20%;
+        width: 100%;
+        height: 70%;
+        padding: 10px 10px ;
+        margin-bottom: 10%;
+
+
+
+    }
+    .col-75{
+        font-size: 1.3em;
+        width:70% ;
+    }
+    .col-25{
+        width: 3%;
+        padding-right: 2px;
+    }
+    .row{
+        padding-bottom: 5px;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+
+}
+@media screen and (device-aspect-ratio: 16/9) {
+    #wrapper{
+        margin-top: 25%;
+        width: 100%;
+        height: 70%;
+        padding: 10px 10px ;
+        margin-bottom: 5%;
+
+
+
+    }
+    .col-75{
+        font-size: 1.3em;
+        width:70% ;
+    }
+    .col-25{
+        width: 3%;
+        padding-right: 2px;
+    }
+    .row{
+        padding-bottom: 5px;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+
+}
+@media screen and (device-aspect-ratio: 3/4) {
+    #wrapper{
+
+        width: 100%;
+        height: 90%;
+        padding: 20px 20px ;
+        margin-bottom: 20%;
+        margin-left: 35%;
+        margin-right: 20%; margin-top: 30%;
+
+
+
+    }
+    .col-75{
+        font-size: 1.5em;
+        width:80% ;
+    }
+    .col-25{
+        width: 3%;
+        padding-right: 2px;
+    }
+    .row{
+        padding-bottom: 5px;
+    }
+    ::placeholder{
+        font-size: 14px;
+    }
+
+}

@@ -1,16 +1,25 @@
-@import url(https://fonts.googleapis.com/css?family=Anton);
-body{
-    /*background-color: deeppink; pt browserele care nu suporta gradient*/
+@import url(footer.css);
 
-
+.mini-footer{
+    background: transparent;
+    opacity: .5;
+    z-index: 600;
 }
+.mini-footer p {
 
+    line-height:26px;
+    font-size:14px;
+    color:#004085;
+    margin-left: 50%;
+    font-weight: bold;
+}
 p {
     color: #545b62;
 }
 /* Split the screen in half */
 .split {
-    height: calc(100% - 80px);
+    /*height: calc(100% - 80px);*/
+    height: 100%;
     width: 50%;
     position: fixed;
     z-index: 1;
@@ -24,44 +33,56 @@ p {
 }
 li{
     list-style-type:none;
+    margin-left: 10%;
+    padding: 60px;
 }
 a {
-    color: #dc2430;
-    font-size: 1.3em;
+    color: #3b5998;
+    font-size: 1.4em;
  text-decoration: none;
 }
-a:hover{
-    color: #dc2430;
+.btn-outline-primary:hover{
+    background-color: #004085;
+    color: #FFFFFF;
+  font-size: 23px;
     transform: scale(1.2);
+
 }
 
 .left {
     left: 0;
-    background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7b4397, #dc2430);
+    background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7CA3DA, #004085);
 }
 
 /* Control the right side */
 .right {
     right: 0;
-    background-color: #222222 ;
+    background-color: white ;
 
 }
-button{
-    background-color: #222222;
 
-    border: 3px solid #dc2430;
+.btn-outline-primary{
+    background-color: white;
+ height: 100px;
+    width: 250px;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 4px solid #004085;
     border-radius: 28px;
-    width: 40%;
-    height: 55px;
+    letter-spacing: 1px;
+
 
     margin-top: 80px;
     margin-left:150px;
     margin-right:auto;
 
     position: relative;
-
+   color:#004085;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: lighter;
 }
 .container-fluid {
     background-color: lightgrey;
@@ -70,15 +91,7 @@ button{
     margin-top: 12px;
 }
 
-/*div a {*/
-    /*color: #545b62;*/
-    /*text-align: right;*/
-    /*font-size: 16px;*/
-/*}*/
 
-/*div a:hover {*/
-    /*color: deeppink;*/
-/*}*/
 
 div h5 {
     color:#818182;

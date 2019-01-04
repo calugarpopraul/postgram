@@ -2,17 +2,23 @@
 .mini-footer {
     position: fixed;
     left: 0px;
-    bottom: 0;
-    height: 50px;
+    bottom: 0px;
+    height: 7%;
     width: 100%;
-    background-color: #222222;
+   background-color: #2f3036;
     text-align: center;
     padding: 5px 0;
 
+
+/*background: rgba(0,0,0,0.1);*/
+
+
 }
 .mini-footer p {
-    margin:0;
+
     line-height:26px;
-    font-size:13px;
-    color:#999
+    font-size:14px;
+    color:darkgray;
+    margin-top:-10px;
+    font-weight: lighter;
 }
