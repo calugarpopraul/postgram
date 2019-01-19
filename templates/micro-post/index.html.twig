@@ -20,20 +20,25 @@
     {% else %}
 
     <br/>
-    <h5>Recent updates</h5>
+        <div class="card-group" id = "updates">
+            <div class="card"><h5>Recent updates</h5> <br></div>
+
+                <div class="card">
+                    <ul class="navbar-nav px-5">
+                    {% if is_granted('ROLE_USER') %}
+                            <a class="btn btn-outline-danger" id="btn-btn" href="{{ path('micro_post_add') }}" role="button">Add new</a>
+
+                    {% endif %}
+                </ul>
+                </div>
+
+        </div>
+
+
     <br/>
 
     <div class="border-bottom border-gray pb-2 mb-0">
-    <div class="w-100 order-1 order-md-0">
-        <ul class="navbar-nav px-3">
-            {% if is_granted('ROLE_USER') %}
-                <li class="nav-item text-nowrap">
-                    <a class="btn btn-outline-dark" href="{{ path('micro_post_add') }}" role="button">Add new</a>
-                </li>
-            {% endif %}
-        </ul>
 
-    </div>
         <div class="container-fluid">
 
         {% for post in posts %}

@@ -1,6 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
+<div class="container" id="posts">
     {{ include('micro-post/raw-post.html.twig') }}
 
     {% set isLiked = post.getLikedBy.contains(app.user) %}
@@ -16,6 +17,7 @@
             <span class="badge badge-light" id="likes-unlike">{{ post.getLikedBy.count }}</span>
         </button>
     </div>
+</div>
 
 {% endblock %}
 

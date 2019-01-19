@@ -63,7 +63,7 @@ a {
 
 .btn-outline-primary{
     background-color: white;
- height: 100px;
+    height: 100px;
     width: 250px;
     padding-left: 90px;
     padding-right: 90px;
@@ -140,10 +140,15 @@ img {
     height: 35px;
 }
 
-.btn-outline-dark {
+#btn-btn {
     width: 100px;
     height: 40px;
-    margin-left: 84%;
+
+    display: flex;
+    margin-left:75%;
+    align-content:center;
+    justify-content: center;
+    margin-top:1%;
 }
 
 /*For homepage text */
@@ -199,11 +204,11 @@ h1 {
 
 
 .card-group h5 {
-    color: lightslategrey;
+    color: black;
 }
 
 .card-group a {
-    color: darkblue;
+    color: #004085;
 }
 
 .card-group a:hover {

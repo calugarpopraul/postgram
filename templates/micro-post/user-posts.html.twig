@@ -4,7 +4,7 @@
     <div class="container" id="myBody">
     <div class="card-group py-2">
         <div class="card">
-            <div class="card-body">
+            <div class="card-body" id="user">
                 <h5 class="card-title">
                     {{ user.fullName }}
                     <small class="text-muted">@{{ user.username }}</small>
@@ -13,7 +13,7 @@
                 {% if is_granted('ROLE_USER') and user != app.user %}
                     {% if user.followers.contains(app.user) == false %}
                         <a href="{{ path('following_follow',{'id':user.id}) }}"
-                           class="btn btn-outline-primary">Follow</a>
+                           class="btn btn-outline-danger">Follow</a>
                     {% else %}
                         <a href="{{ path('following_unfollow',{'id':user.id}) }}"
                            class="btn btn-outline-danger">Unfollow</a>
@@ -26,13 +26,13 @@
 
     <div class="card-group py-2">
         <div class="card">
-            <div class="myCard" id="follow">
+            <div class="card-body" id="follow">
                 <h5>Followers</h5>
             </div>
             <div class="group" id = "ulGroup">
             <ul class="list-group list-group-flush">
                 {% for follower in user.followers %}
-                    <li class="list-group-item">
+                    <li class="list-group-item  border-bottom-0">
                         <a href="{{ path('micro_post_user',{'username':follower.username}) }} ">
                             @{{ follower.username }}
                         </a>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="card">
-            <div class="myCard" id="follow">
+            <div class="card-body" id="follow">
                 <h5>Following</h5>
             </div>
             <div class="group" id = "ulGroup">
