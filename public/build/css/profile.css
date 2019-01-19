@@ -1,27 +1,35 @@
-.card-body
-{
+.card-group>.card {
+  border-radius: 20px;
+  padding:0.5%;
   border: 2px solid #004085;
-  border-radius: 3px;
+}
 
-}
-.card
+#user
 {
-  border: 1px solid #004085;
+
+  border-radius: 20px;
+  background-color:white;
 }
+
 .group
 {
- margin-top:0.2%;
-}
-.list-group
-{
-  border: 2px solid #004085;
-  border-radius: 3px;
-
+  margin-top:0.2%;
 }
 .list-group-flush
 {
+  /*border: 2px solid #004085;*/
+  /*border-radius: 3px;*/
+  border-bottom: 0 none;
+  border-radius: 20px;
+  padding:1%;
+}
+.list-group-item
+{
+  border-radius: 20px;
   border: 2px solid #004085;
-  border-radius: 3px;
+  padding-bottom:2%;
+  /*border: 2px solid #004085;*/
+  /*border-radius: 3px;*/
 
 }
 .container-fluid
@@ -33,23 +41,49 @@
 }
 .d-block
 {
-font-family:sans-serif;
+  font-family:sans-serif;
 }
 
-#follow
-{
-  padding-left:1%;
-  height: 50px;
-  border: 2px solid #004085;
-  border-radius: 2px;
-}
+/*#follow*/
+/*{*/
+/*padding-left:1%;*/
+/*height: 50px;*/
+/*border-radius: 2px;*/
+/*background-color:white;*/
+/*}*/
 .btn-btn-secondary
 {
   background-color:#004085;
 }
+
 body
 {
+  background-repeat: initial;
+  height:100%;
+  background-attachment: fixed;
+  background-origin: initial;
+  background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7CA3DA, #004085);
+
+}
+.text-gray-dark
+{
+  color:black;
+}
+.card-title h5
+{
+  color:black;
+}
+#updates
+{
+  border-radius: 10px;
+  /*background-color:white;*/
+}
+#posts
+{
+  margin-top:1%;
+  border-radius: 20px;
+  border: 2px solid #004085;
   background-color:white;
-  /*background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7CA3DA, #004085);*/
+  padding:1%;
 
 }
