@@ -13,7 +13,6 @@
         "symfony/flex": "^1.1",
         "symfony/form": "*",
         "symfony/framework-bundle": "*",
-        "symfony/maker-bundle": "^1.8",
         "symfony/orm-pack": "^1.0",
         "symfony/security": "*",
         "symfony/security-bundle": "*",
@@ -27,6 +26,7 @@
         "doctrine/doctrine-fixtures-bundle": "^3.0",
         "sensiolabs/security-checker": "^5.0",
         "symfony/dotenv": "*",
+        "symfony/maker-bundle": "^1.11",
         "symfony/profiler-pack": "^1.0",
         "symfony/web-server-bundle": "*"
     },
