@@ -1,0 +1,55 @@
+.card-body
+{
+  border: 2px solid #004085;
+  border-radius: 3px;
+
+}
+.card
+{
+  border: 1px solid #004085;
+}
+.group
+{
+ margin-top:0.2%;
+}
+.list-group
+{
+  border: 2px solid #004085;
+  border-radius: 3px;
+
+}
+.list-group-flush
+{
+  border: 2px solid #004085;
+  border-radius: 3px;
+
+}
+.container-fluid
+{
+  border: 2px solid #004085;
+  border-radius: 20px;
+  padding-bottom: 1%;
+  background-color:white;
+}
+.d-block
+{
+font-family:sans-serif;
+}
+
+#follow
+{
+  padding-left:1%;
+  height: 50px;
+  border: 2px solid #004085;
+  border-radius: 2px;
+}
+.btn-btn-secondary
+{
+  background-color:#004085;
+}
+body
+{
+  background-color:white;
+  /*background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7CA3DA, #004085);*/
+
+}
