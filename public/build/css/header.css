@@ -1,8 +1,3 @@
-/*.header {*/
-    /*height: 65px;*/
-    /*background-color: black;*/
-    /*margin:-10px;*/
-/*}*/
 
 nav a {
     color: whitesmoke;
@@ -11,7 +6,7 @@ nav a {
 }
 
 nav a:hover{
-    color: hotpink;
+    color:#7CA3DA;
     transform: scale(1.2);
 }
 
@@ -21,61 +16,7 @@ nav a:hover{
     padding-top: 20px;
 }
 
-/*Strip the ul of padding and list styling*/
-#menu {
-    list-style-type:none;
-    padding:6PX;
-    float: right;
-    margin-top: 6px;
-}
-/*Create a horizontal list with spacing*/
-.ListMenu{
-    display:inline-block;
-    margin-right: 40px;
-    padding: 0px;
-}
-/*Style for menu links*/
-.ListMenu a {
-    display:block;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-family: "Segoe UI Semibold";
-    color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    margin-top: -5px;
-}
-/*a:hover{*/
-    /*color: orange;*/
-    /*transform: scale(1.1);*/
-/*}*/
 
-
-/*Style for dropdown links*/
-.ListMenu:hover menu a {
-    background: #f3f3f3;
-    color: #2f3036;
-    height: 40px;
-    line-height: 40px;
-    color: orange;
-    transform: scale(1.1);
-
-}
-
-.show-menu {
-    display:block;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
-    font-family: Consolas;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1em;
-    margin-top: -5px;
-    display: none;
-}
-/*Hide checkbox*/
 input[type=checkbox]{
     display: none;
 }
@@ -106,15 +47,6 @@ input[type=checkbox]:checked ~ #menu{
         display: block;
     }
 }
-#menuicon{
-    float: right;
-    margin-right: 5px;
-    font-size: 1.3em;
-    color: orange;
-}
-#menuicon:hover{
-    transform: scale(1.1);
-}
 
 #notifications-link {
     color: lightgrey;
@@ -122,4 +54,21 @@ input[type=checkbox]:checked ~ #menu{
 
 #notifications-link:hover {
     border-right: none;
+    color: #7CA3DA;
+}
+.border-right{
+    height: 65px;
+}
+.navbar-nav > li > a, .navbar-brand {padding-top:10px !important; padding-bottom:0 !important; height: 65px; }
+.navbar {max-height:65px !important; background-color: #004085}
+.nav-item{
+   margin-left:-50px;
+}
+.btn{
+    background-color: #7CA3DA;
+    color:whitesmoke;
+    font-size: 12px;
+}
+.form-group{
+
 }

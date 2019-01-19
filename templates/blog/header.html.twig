@@ -1,15 +1,23 @@
-<nav class="navbar navbar-expand-md sticky-top bg-dark p-0">
+<nav class="navbar navbar-expand-md sticky-top  p-0">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0"
        href="{{ path('micro_post_index') }}" id="company_name">Happy Tweet</a>
+    <form class="form-inline  my-2 my-lg-0">
+        <div class="form-group">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn  inline-button my-2 my-sm-0" type="submit">Search</button>
+        </div>
+    </form>
 
     <div class="w-100 order-1 order-md-0">
 
     </div>
 
     <div class="order-2 order-md-1">
+
         <ul class="navbar-nav px-3">
+
             {% if is_granted('ROLE_USER') %}
-                <li class="nav-item text-nowrap border-right border-secondary">
+                <li class="nav-item text-nowrap border-right  border-secondary">
                     <a class="nav-link" id="notifications-link" href="{{ path('notification_all') }}">
                         Notifications
                         <span class="badge badge-light" id="notification-count">
