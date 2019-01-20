@@ -1,6 +1,6 @@
 {% extends 'micro-post/base2.html.twig' %}
 {% block stylesheets %}
-
+    <link rel="stylesheet" href="{{ asset('build/css/animation.css') }}">
     <link rel="stylesheet" href="{{ asset('build/css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('build/css/footer.css') }}">
     <link rel="stylesheet" href="{{ asset('build/css/homepage.css') }}">
@@ -9,8 +9,25 @@
 
         <div class="split left">
             <div class="centered">
+                <section class="containerM">
+                    <h1 class="title" id="h1">
+                        <span>Think.</span>
+                    </h1>
 
-                <p></p>
+                    <h2 class="title" id="h2">
+                        <span>Write.</span>
+                    </h2>
+                    <h3 class="title" id="h3">
+                        <span>Explore.</span>
+
+                    </h3>
+                    <h4 class="title" id="h4">
+                        <span>HappyTweet</span>
+
+                    </h4>
+
+                </section>
+                <span class="usechrome">Use Chrome for a better experience</span>
             </div>
         </div>
 
