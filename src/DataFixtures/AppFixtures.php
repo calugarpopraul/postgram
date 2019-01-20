@@ -12,7 +12,7 @@ class AppFixtures extends Fixture
 {
     private const USERS = [
         [
-            'username' => 'john_doe',
+            'username' => 'john_doe1',
             'email' => 'john_doe@doe.com',
             'password' => 'john123',
             'fullName' => 'John Doe',

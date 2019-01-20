@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: raul
+ * user: raul
  * Date: 10/20/18
  * Time: 8:50 AM
  */
@@ -43,6 +43,10 @@ class MicroPostController extends Controller
      * @var MicroPostRepository
      */
     private $microPostRepository;
+    /**
+     * @var UserRepository
+     */
+    private $userRepository;
     /**
      * @var FormFactoryInterface
      */
@@ -112,6 +116,24 @@ class MicroPostController extends Controller
     }
 
     /**
+     * @Route("/users", name="all_users")
+     */
+    public function allUsers(TokenStorageInterface $tokenStorage, UserRepository $userRepository)
+    {
+
+        $currentUser = $tokenStorage->getToken()->getUser();
+        $repo = $this->getDoctrine()->getRepository(User::class);
+
+        $users = $repo->findAllWithMoreThan5PostsExceptUser($currentUser);
+
+        $html = $this->twig->render('user/allusers.html.twig',[
+            'users' => $users,
+        ]);
+
+        return new Response($html);
+    }
+
+    /**
      * @Route("/edit/{id}", name="micro_post_edit")
      * @Security("is_granted('edit', microPost)", message="Access denied")
      */
@@ -162,10 +184,8 @@ class MicroPostController extends Controller
     public function add(Request $request, TokenStorageInterface $tokenStorage)
     {
         $user = $tokenStorage->getToken()->getUser();
-        dump($user);
         $microPost = new MicroPost();
         $microPost->setUser($user);
-//        $microPost->setTime(new \DateTime());
 
         $form = $this->formFactory->create(MicroPostType::class, $microPost);
         $form -> handleRequest($request);

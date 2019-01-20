@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: raul
+ * user: raul
  * Date: 10/16/18
  * Time: 3:13 PM
  */
@@ -9,6 +9,9 @@
 namespace App\Controller;
 
 
+use App\Entity\User;
+use App\Repository\MicroPostRepository;
+use App\Repository\UserRepository;
 use App\Service\Greeting;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -18,6 +21,7 @@ use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Routing\RouterInterface;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Twig_Environment;
 
 
@@ -38,6 +42,16 @@ class BlogController extends AbstractController
      * @var RouterInterface
      */
     private $router;
+
+    /**
+     * @var UserRepository
+     */
+    private $userRepository;
+
+    /**
+     * @var MicroPostRepository
+     */
+    private $microPostRepository;
 
     public function __construct(
         \Twig_Environment $twig,

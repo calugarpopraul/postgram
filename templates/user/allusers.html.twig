@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container-fluid">
+        {% for user in users %}
+            <span class="d-block">
+                    <a href="{{ path('micro_post_user', {'username' : user.username}) }}">
+                        <strong class="text-gray-dark">@{{ user.username }}</strong>
+                    </a>
+                <p class="text-gray-dark">@{{ user.fullName }}</p>
+                </span>
+            <small class="d-block text-right mt-3">
+                {% if user.followers.contains(app.user) == false %}
+                    <a href="{{ path('following_follow',{'id':user.id}) }}"
+                       class="btn btn-outline-\">Follow</a>
+                {% else %}
+                    <a href="{{ path('following_unfollow',{'id':user.id}) }}"
+                       class="btn btn-outline-danger">Unfollow</a>
+                {% endif %}
+                <br/>
+            </small>
+        {% endfor %}
+        <br/>
+    </div>
+
+{% endblock %}

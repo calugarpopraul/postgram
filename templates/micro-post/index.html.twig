@@ -47,7 +47,6 @@
 
             <small class="d-block text-right mt-3">
                 {% if is_granted('edit', post) %}
-                    {#<a href="{{ path('micro_post_edit', {'id': post.id}) }}" id="edit_button">Edit</a>#}
                     <a class="btn btn-secondary" href="{{ path('micro_post_edit', {'id': post.id}) }}" role="button"
                        id="btn_sec_edit">Edit</a>
                 {% endif %}
