@@ -1,0 +1,63 @@
+
+.card-body {
+    text-align: center;
+}
+
+
+.card{
+    margin: 0px; border: 1px solid #024286;
+    margin-top: 30px;
+    border-radius: 25px;
+//margin-right: 10%;
+// margin-left: 10%;
+
+
+}
+.list-group-item {
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: content-box;
+
+}
+#unread{
+    border: 0px;
+    font-size: 30px;
+    background-color: lightgray; /* Green */
+    border: none;
+    color: black;
+    font-family: "Times New Roman", serif;
+    border-radius: 25px;
+    text-decoration: none;
+    max-width:content-box;
+
+
+}
+#unread:hover{
+    background-color: white;
+    font-size: 35px;
+
+}
+#list_elements{
+    margin-right: 8%;
+
+}
+#button_OK {
+    border-radius: 45%;
+
+   float:right;
+    margin-left:10px;
+    max-width: fit-content;
+
+}
+#no_notifications{
+    font-size: 1.5em;
+}
+@media (max-width: 768px) {
+   .list-group-item{
+       max-width: fit-content;
+
+       align-content: center;
+       justify-content: center;
+   }
+}

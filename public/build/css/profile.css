@@ -20,7 +20,7 @@
   /*border: 2px solid #004085;*/
   /*border-radius: 3px;*/
   border-bottom: 0 none;
-  border-radius: 20px;
+  border-radius: 21px;
   padding:1%;
 }
 .list-group-item
@@ -30,6 +30,7 @@
   padding-bottom:2%;
   /*border: 2px solid #004085;*/
   /*border-radius: 3px;*/
+
 
 }
 .container-fluid
@@ -58,12 +59,12 @@
 
 body
 {
+
+  background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7CA3DA, #004085);
   background-repeat: initial;
   height:100%;
   background-attachment: fixed;
   background-origin: initial;
-  background:  url("https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-new-age/master/img/bg-pattern.png"),linear-gradient(to left, #7CA3DA, #004085);
-
 }
 .text-gray-dark
 {

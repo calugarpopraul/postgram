@@ -62,13 +62,66 @@ input[type=checkbox]:checked ~ #menu{
 .navbar-nav > li > a, .navbar-brand {padding-top:10px !important; padding-bottom:0 !important; height: 65px; }
 .navbar {max-height:65px !important; background-color: #004085}
 .nav-item{
-   margin-left:-50px;
+   margin-left:30px;
 }
 .btn{
     background-color: #7CA3DA;
     color:whitesmoke;
     font-size: 12px;
 }
-.form-group{
+/*.form-group{*/
 
+/*}*/
+/*.navbar {*/
+    /*min-height: 50px;@navbar-height: 50px;*/
+/*}*/
+
+/*.navbar-brand {*/
+    /*padding: 0 15px;*/
+    /*height: 50px;*/
+    /*line-height: 80px;*/
+/*}*/
+.icon-bar{
+    color:whitesmoke;
+}
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    /*/margin-top: 23px;*/
+    padding: 9px 10px !important;
+   /*background-color: #004085;*/
+    color: whitesmoke;
+    border:none;
+    size: 3em;
+    background-color: #004085;
+}
+.navbar-collapse{
+    background-color: #004085;
+
+   /*// height: 65px;*/
+
+}
+.navbar-header form {
+    position: absolute;
+    right: 20px;
+    max-width: 250px;
+    margin-left:15px;
+}
+.form-control{
+    margin-left:15px;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 26.5px;
+        padding-bottom: 26.5px;
+        line-height: 27px;
+
+
+    }
+    .navbar-collapse{
+        height: 65px;
+    }
+    .navbar-toggle{
+        visibility: hidden;
+    }
 }
