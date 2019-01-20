@@ -29,16 +29,18 @@ html, body {
 }
 
 .footer{
-  position: fixed;
+    position: relative;
 
- text-align: center;
-    margin-top: -350px;
+    text-align: center;
     width: 100%;
 
-    left: 0px;
-    bottom: 0px;
-   flex-shrink: 0;
-    height: 7%;
- color:grey;
-    background-color:#004085;
+    left: 0;
+    flex-shrink: 0;
+    color:white;
+    clear: both;
+    height:  40px;
+    margin-top: -40px;
+    bottom: 0;
+
+
 }

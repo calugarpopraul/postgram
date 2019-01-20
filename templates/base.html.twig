@@ -19,8 +19,6 @@
 
     {% endblock %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="build/js/animation.js"></script>
     <title>Happytweet</title>
 
 
@@ -33,10 +31,10 @@
     {% block body %}{% endblock %}
 
 </div>
+
 {% block masterfooter%}
     {% include 'blog/footer.html.twig' %}
 {% endblock %}
-
 
 {#{% block javascripts %}#}
     {#<script src="{{ asset('build/js/Main.js') }}"></script>#}
@@ -54,8 +52,35 @@
     {#<!-- Custom scripts for this template -->#}
     {#<script src="js/new-age.min.js"></script>#}
 {#{% endblock %}#}
+
 {% block javascripts %}
     <script src="{{ asset('build/js/app.js') }}"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="build/js/animation.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // var height = $('body').height();
+            // var bodyHeight = jQuery(".container").height();
+            // var total = jQuery(window).height() + jQuery(window).scrollTo();
+
+            if(bodyHeight <= total) {
+                jQuery("#footer").hide();
+            } else {
+                jQuery("#footer").show();
+            }
+
+            var height = jQuery(window).height();
+            var bottom = jQuery(window).offset().top + jQuery(window).outerHeight(true);
+            $(".container").css({height: height});
+            $("#footer").css({bottom: 0});
+            // $("#footer").hide();
+        });
+
+
+    </script>
+
 {% endblock %}
 </body>
 </html>

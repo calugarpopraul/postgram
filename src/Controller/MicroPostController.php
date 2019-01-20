@@ -95,7 +95,9 @@ class MicroPostController extends Controller
     public function index(TokenStorageInterface $tokenStorage, UserRepository $userRepository)
     {
         $currentUser = $tokenStorage->getToken()->getUser();
+        $repo = $this->getDoctrine()->getRepository(User::class);
 
+        $users = $repo->findAllWithMoreThan5PostsExceptUser($currentUser);
         $usersToFollow = [];
 
         if ($currentUser instanceof User) {
@@ -108,6 +110,7 @@ class MicroPostController extends Controller
         }
 
         $html = $this->twig->render('micro-post/index.html.twig',[
+            'users' => $users,
             'posts' => $posts,
             'usersToFollow' => $usersToFollow
         ]);
