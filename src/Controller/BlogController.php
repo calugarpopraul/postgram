@@ -13,6 +13,7 @@ use App\Entity\User;
 use App\Repository\MicroPostRepository;
 use App\Repository\UserRepository;
 use App\Service\Greeting;
+use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -85,6 +86,34 @@ class BlogController extends AbstractController
     {
         return new Response(
             $this->twig->render('blog/homepage.html.twig')
+        );
+    }
+
+    /**
+     * @return Response
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
+     * @Route("/messages/{id}", name="app_messaging")
+     */
+    public function messages(User $userToMessage, $id)
+    {
+        $currentUser = $this->getUser();
+//        dump($currentUser);
+
+        if($userToMessage->getId() !== $currentUser->getId()) {
+//            dump($userToMessage);die;
+            /**
+             * websockets
+             */
+        }
+
+        return $this->render(
+            'messaging/messages.html.twig',
+            [
+                'id' => $userToMessage->getId(),
+                'user' => $userToMessage->getUsername()
+            ]
         );
     }
 

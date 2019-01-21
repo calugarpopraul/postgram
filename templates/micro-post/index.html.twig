@@ -19,6 +19,7 @@
         {% endfor %}
     {% else %}
 
+
     <br/>
         <div class="card-group" id = "updates">
             <div class="card"><h5>Recent updates</h5> <br></div>
@@ -43,7 +44,22 @@
 
         {% for post in posts %}
 
+
             {{ include('micro-post/raw-post.html.twig', {'post': post}) }}
+
+            {#{% set isLiked = post.getLikedBy.contains(app.user) %}#}
+
+            {#<div class="pt-2 float-right" >#}
+                {#<button style="display: {% if not isLiked %}block{% else %}none{% endif %}"#}
+                        {#class="btn btn-outline-danger btn-sm" id="like">Like#}
+                    {#<span class="badge badge-light" id="likes-like">{{ post.getLikedBy.count }}</span>#}
+                {#</button>#}
+
+                {#<button style="display: {% if isLiked %}block{% else %}none{% endif %}"#}
+                        {#class="btn btn-outline-secondary btn-sm" id="unlike">Unlike#}
+                    {#<span class="badge badge-light" id="likes-unlike">{{ post.getLikedBy.count }}</span>#}
+                {#</button>#}
+            {#</div>#}
 
             <small class="d-block text-right mt-3">
                 {% if is_granted('edit', post) %}
@@ -51,15 +67,21 @@
                        id="btn_sec_edit">Edit</a>
                 {% endif %}
                 {% if is_granted('delete', post) %}
-                    {#<a href="{{ path('micro_post_delete', {'id': post.id}) }}" id="delete_button">Delete</a>#}
                     <a class="btn btn-danger" href="{{ path('micro_post_delete', {'id': post.id}) }}" role="button"
                        id="btn_danger_delete">Delete</a>
                 {% endif %}
+
+
             </small>
+
+
 
         {% endfor %}
 
         {% endif %}
+
+
+
     <br/>
 
 

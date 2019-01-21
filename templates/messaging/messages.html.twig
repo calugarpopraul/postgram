@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+
+        <div class="container-fluid">
+            <div class="card">
+                <div class="card-header">
+                    <h3> Messages </h3>
+                </div>
+                <div class="card-body mx-3">
+                    <p>Send a message to @{{ user }}</p>
+                    <input type="text" style="margin-right: 15px" id="message">
+                    <button type="submit" class="btn" id="send-button" onclick="sendMessage(message.value)"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <input type="text" id="msg"/>
+
+            </div>
+
+        </div>
+    {% endblock %}
+
+{% block javascripts %}
+    <script>
+
+    let conn = new WebSocket('ws://localhost:8080');
+    let msg = document.getElementById("message").value;
+    conn.onopen = function(e) {
+    console.log("Connection established!");
+    };
+
+    conn.onmessage = function(e) {
+        console.log(e.data);
+        // window.alert(e.data);
+        display(e.data);
+    };
+
+    function display(msg) {
+        let txt = document.getElementById("msg");
+        txt.value = msg;
+    }
+
+    function sendMessage(msg) {
+        conn.send(msg);
+    }
+
+    </script>
+
+{% endblock %}
+
+
+{#php bin/chatServer.php#}
+{#telnet localhost 8080#}
+{#telnet localhost 8080#}

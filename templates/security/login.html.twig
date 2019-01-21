@@ -2,6 +2,56 @@
 
 
 {% block body%}
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId            : '389631121809683',
+                    autoLogAppEvents : true,
+                    xfbml            : true,
+                    version          : 'v3.2'
+                });
+            };
+
+            (function(d, s, id){
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement(s); js.id = id;
+                js.src = "https://connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+
+            FB.getLoginStatus(function(response) {
+                if (response.status === 'connected') {
+                    var accessToken = response.authResponse.accessToken;
+                }
+            } );
+
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                </fb:login-button>
+
+            function checkLoginState() {
+                FB.getLoginStatus(function(response) {
+                    statusChangeCallback(response);
+                });
+
+                FB.login(function(response) {
+                    // handle the response
+                }, {scope: 'public_profile,email'});
+            }
+
+            FB.login(function(response) {
+                if (response.status === 'connected') {
+                    // Logged into your app and Facebook.
+                } else {
+                    // The person is not logged into this app or we are unable to tell.
+                }
+            });
+
+            FB.logout(function(response) {
+                // Person is now logged out
+            });
+        </script>
+
     {% if error %}
         <div class="alert alert-danger">
             {{ error.messageKey|trans(error.messageData, 'security') }}
@@ -24,13 +74,13 @@
 
 
 
-                <a href="#" class="fb btn1" >
+                <a href="{{ path('connect_facebook_start') }}" class="fb btn1" >
                     <i class="fa fa-facebook fa-fw"  id="googleBtn"></i> Login with Facebook
                 </a>
 
                 <br>
 
-                <a href="#" class="google btn1"><i class="fa fa-google fa-fw">
+                <a href="{{ path('connect_google') }}" class="google btn1"><i class="fa fa-google fa-fw">
                     </i> Login with Google+
                 </a>
                 <br>

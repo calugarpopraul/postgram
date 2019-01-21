@@ -3,7 +3,7 @@
 {% block body %}
     <div class="container" id="myBody">
     <div class="card-group py-2">
-        <div class="card">
+        <div class="card" style="border-radius: 20px">
             <div class="card-body" id="user">
                 <h5 class="card-title">
                     {{ user.fullName }}
@@ -20,6 +20,12 @@
                     {% endif %}
 
                 {% endif %}
+
+                <a href="{{ path('app_messaging', {'id':user.id}) }}"
+                   class="btn btn-outline-info float-right">
+                    {#<i class="fas fa-envelope"></i>#}
+                    DM @{{ user.username }}<i class="fas fa-paper-plane" style="margin-left: 15px"></i>
+                </a>
             </div>
         </div>
     </div>

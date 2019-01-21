@@ -102,6 +102,16 @@ class User implements AdvancedUserInterface, \Serializable
      */
     private $enabled;
 
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $facebookId;
+
+//    /**
+//     * @ORM\Column(type="datetime")
+//     */
+//    private $created_at;
+
     public function __construct()
     {
         $this->posts = new ArrayCollection();
@@ -317,6 +327,27 @@ class User implements AdvancedUserInterface, \Serializable
     {
         $this->enabled = $enabled;
     }
+
+    public function getFacebookId()
+    {
+        return $this->facebookId;
+    }
+
+    public function setFacebookId($facebookId)
+    {
+        $this->facebookId = $facebookId;
+    }
+//    public function getCreatedAt(): ?\DateTimeInterface
+//    {
+//        return $this->created_at;
+//    }
+//
+//    public function setCreatedAt(\DateTimeInterface $created_at): self
+//    {
+//        $this->created_at = $created_at;
+//
+//        return $this;
+//    }
 
 
     public function isAccountNonExpired()
