@@ -4,12 +4,8 @@
     <list default="true" id="400632a9-e263-4b92-bd1e-49578da4aca9" name="Default Changelist" comment="footer &amp;&amp; facebook controller">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/chatServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chatServer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MicroPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MicroPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190118202319.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20190118202319.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/messaging/messages.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/messaging/messages.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,8 +124,8 @@
           <entry key="gitignore" value="7" />
           <entry key="html" value="1" />
           <entry key="js" value="4" />
-          <entry key="json" value="6" />
-          <entry key="lock" value="2" />
+          <entry key="json" value="8" />
+          <entry key="lock" value="3" />
           <entry key="micro_post" value="1" />
           <entry key="migration_versions" value="1" />
           <entry key="php" value="136" />
@@ -146,7 +142,7 @@
           <entry key="CSS" value="25" />
           <entry key="Database Element" value="15" />
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="7" />
+          <entry key="JSON" value="10" />
           <entry key="JavaScript" value="4" />
           <entry key="PHP" value="136" />
           <entry key="PLAIN_TEXT" value="7" />
@@ -193,8 +189,8 @@
       <usages-collector id="statistics.php.rename.constructor" />
       <usages-collector id="statistics.php.composer.actions">
         <counts>
-          <entry key="install_from_ComposerEditorNotificationPanel" value="4" />
-          <entry key="updateAll_from_ComposerEditorNotificationPanel" value="2" />
+          <entry key="install_from_ComposerEditorNotificationPanel" value="6" />
+          <entry key="updateAll_from_ComposerEditorNotificationPanel" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.composer.command.options" />
@@ -265,25 +261,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/blog/homepage.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1071">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/blog/post.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/blog/register.html.twig">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/build/css/animation.css">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -302,13 +279,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="374">
+              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2244" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -421,7 +419,6 @@
         <option value="$PROJECT_DIR$/public/build/css/messages.css" />
         <option value="$PROJECT_DIR$/src/Controller/BlogController.php" />
         <option value="$PROJECT_DIR$/templates/micro-post/user-posts.html.twig" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/templates/micro-post/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" />
         <option value="$PROJECT_DIR$/src/Service/Chat.php" />
@@ -434,6 +431,7 @@
         <option value="$PROJECT_DIR$/bin/chatServer.php" />
         <option value="$PROJECT_DIR$/templates/messaging/messages.html.twig" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -739,7 +737,7 @@
       <workItem from="1548412539039" duration="2483000" />
       <workItem from="1548434956927" duration="13000" />
       <workItem from="1549358813051" duration="657000" />
-      <workItem from="1549361073406" duration="802000" />
+      <workItem from="1549361073406" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1539693188591</created>
@@ -815,15 +813,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135197000" />
+    <option name="totallyTimeSpent" value="135759000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20330843" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.20330843" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994664" weight="0.32878152" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32878152" />
@@ -834,7 +831,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32984293" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4989339" weight="0.32983193" />
-      <window_info anchor="bottom" x="0" y="55" width="1920" height="1025" id="Terminal" order="10" sideWeight="0.50054765" visible="true" weight="0.38445377" />
+      <window_info active="true" anchor="bottom" x="0" y="55" width="1920" height="1025" id="Terminal" order="10" sideWeight="0.50054765" visible="true" weight="0.38445377" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.3264642" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32900432" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.329718" />
@@ -886,20 +883,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="footer &amp;&amp; facebook controller" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/league/oauth2-client/src/Provider/AbstractProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="48" column="10" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Security/GoogleAuthenticator.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -973,13 +956,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Security/MicroPostVoter.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/micro-post/raw-post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
@@ -1180,10 +1156,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2244" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="374">
+          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
