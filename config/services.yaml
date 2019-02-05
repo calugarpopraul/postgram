@@ -42,6 +42,11 @@ services:
         tags:
             - { name: doctrine.event_subscriber, connection: default }
 
+#    Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler:
+#        arguments:
+#            - !service { class: PDO, factory: 'database_connection:getWrappedConnection'}
+
+
 #    App\Controller\BlogController: ['@App\Service\Greeting']
 
     # add more service definitions when explicit configuration is needed

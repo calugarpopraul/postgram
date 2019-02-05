@@ -22,7 +22,7 @@
 {% block javascripts %}
     <script>
 
-    let conn = new WebSocket('ws://localhost:8080');
+    let conn = new WebSocket('ws://localhost:8181');
     let msg = document.getElementById("message").value;
     conn.onopen = function(e) {
     console.log("Connection established!");

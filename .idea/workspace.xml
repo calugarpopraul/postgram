@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="400632a9-e263-4b92-bd1e-49578da4aca9" name="Default Changelist" comment="footer &amp;&amp; facebook controller">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/css/notifications.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/css/notifications.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/BlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FacebookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FacebookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/micro-post/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/micro-post/user-posts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/user-posts.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/ocramius/package-versions/src/PackageVersions/Versions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/chatServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chatServer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MicroPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MicroPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190118202319.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20190118202319.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/messaging/messages.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/messaging/messages.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,20 +96,21 @@
     <session id="316005326">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="38" />
+          <entry key="project.closed" value="45" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="10" />
-          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.1" value="11" />
+          <entry key="project.open.time.10" value="4" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.2" value="6" />
+          <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="5" />
+          <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="3" />
-          <entry key="project.opened" value="39" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -133,7 +120,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="21" />
+          <entry key="css" value="25" />
           <entry key="dist" value="5" />
           <entry key="env" value="5" />
           <entry key="following" value="1" />
@@ -144,25 +131,26 @@
           <entry key="lock" value="2" />
           <entry key="micro_post" value="1" />
           <entry key="migration_versions" value="1" />
-          <entry key="php" value="116" />
-          <entry key="twig" value="98" />
-          <entry key="user" value="10" />
-          <entry key="yaml" value="15" />
+          <entry key="php" value="136" />
+          <entry key="post_likes" value="1" />
+          <entry key="twig" value="107" />
+          <entry key="user" value="11" />
+          <entry key="yaml" value="20" />
           <entry key="yml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="10" />
-          <entry key="CSS" value="21" />
-          <entry key="Database Element" value="13" />
+          <entry key="CSS" value="25" />
+          <entry key="Database Element" value="15" />
           <entry key="HTML" value="1" />
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="4" />
-          <entry key="PHP" value="116" />
+          <entry key="PHP" value="136" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Twig" value="98" />
-          <entry key="YAML" value="17" />
+          <entry key="Twig" value="107" />
+          <entry key="YAML" value="22" />
           <entry key="yarn.lock" value="1" />
         </counts>
       </usages-collector>
@@ -177,10 +165,10 @@
           <entry key="html" value="2" />
           <entry key="js" value="1096" />
           <entry key="json" value="208" />
-          <entry key="php" value="8607" />
-          <entry key="twig" value="5517" />
+          <entry key="php" value="8679" />
+          <entry key="twig" value="5526" />
           <entry key="txt" value="225" />
-          <entry key="yaml" value="838" />
+          <entry key="yaml" value="1112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -190,11 +178,12 @@
           <entry key="HTML" value="2" />
           <entry key="JSON" value="208" />
           <entry key="JavaScript" value="1096" />
-          <entry key="PHP" value="8607" />
+          <entry key="PHP" value="8678" />
           <entry key="PLAIN_TEXT" value="347" />
+          <entry key="SQL" value="1" />
           <entry key="Scratch" value="1" />
-          <entry key="Twig" value="5517" />
-          <entry key="YAML" value="838" />
+          <entry key="Twig" value="5526" />
+          <entry key="YAML" value="1112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -273,137 +262,84 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5266809">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/micro-post/user-posts.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="26" column="95" selection-start-line="26" selection-start-column="95" selection-end-line="26" selection-end-column="95" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/micro-post/post.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="680">
-                  <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/EventListener/LikeNotificationSubscriber.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="33" column="40" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Security/MicroPostVoter.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/composer.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="612">
-                  <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Controller/BlogController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1564">
-                  <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/micro-post/index.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="49" selection-start-line="49" selection-end-line="61" selection-end-column="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/templates/micro-post/raw-post.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/bin/chatServer.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="153">
-                  <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#6#34#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/templates/messaging/messages.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="850">
-                  <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
-                  <folding>
-                    <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Controller/MicroPostController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
-                  <caret line="129" column="72" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
-                  <folding>
-                    <element signature="e#115#140#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Service/Chat.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="616">
-                  <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#112#144#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Controller/LikesController.php">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/blog/homepage.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1071">
+              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/blog/post.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/blog/register.html.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/build/css/animation.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/build/css/header.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1725" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/build/css/notifications.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/build/css/homepage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3655">
+              <caret line="215" selection-start-line="215" selection-end-line="215" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/post_likes">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Entity/MicroPost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -435,9 +371,9 @@
       <find>G</find>
       <find>facebookId</find>
       <find>user-&gt;setF</find>
-      <find>user</find>
       <find>card</find>
       <find>findBy</find>
+      <find>sess</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -448,9 +384,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/src/Form/UserRegistrationType.php" />
-        <option value="$PROJECT_DIR$/templates/blog/register.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/MicroPost.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/public/build/css/header.css" />
@@ -468,7 +401,6 @@
         <option value="$PROJECT_DIR$/templates/User/allusers.html.twig" />
         <option value="$PROJECT_DIR$/templates/blog/header.html.twig" />
         <option value="$PROJECT_DIR$/templates/security/confirmation.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/MicroPostController.php" />
         <option value="$PROJECT_DIR$/templates/blog/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/user/allusers.html.twig" />
         <option value="$PROJECT_DIR$/templates/blog/footer.html.twig" />
@@ -478,7 +410,6 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Controller/GoogleController.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/src/Controller/FacebookController.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Security/FacebookAuthenticator.php" />
         <option value="$PROJECT_DIR$/src/Security/GoogleAuthenticator.php" />
@@ -497,6 +428,11 @@
         <option value="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" />
         <option value="$PROJECT_DIR$/src/Service/Chat.php" />
         <option value="$PROJECT_DIR$/src/Chat/Chat.php" />
+        <option value="$PROJECT_DIR$/src/Controller/FacebookController.php" />
+        <option value="$PROJECT_DIR$/src/Migrations/Version20190118202319.php" />
+        <option value="$PROJECT_DIR$/config/packages/framework.yaml" />
+        <option value="$PROJECT_DIR$/config/services.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/MicroPostController.php" />
         <option value="$PROJECT_DIR$/bin/chatServer.php" />
         <option value="$PROJECT_DIR$/templates/messaging/messages.html.twig" />
       </list>
@@ -620,7 +556,6 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -632,6 +567,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -647,7 +583,37 @@
             <path>
               <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
               <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
@@ -655,16 +621,50 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Service" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="email" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="micro-post" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
+              <item name="postgram" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="notification" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="messa&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/messaging/messages.html.twig&#10;raw&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/raw-post.html.twig&#10;index&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/index.html.twig&#10;blog&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/BlogController.php&#10;compo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;use&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;user&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/user-posts.html.twig&#10;access_token&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;logi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;face&#9;null&#9;null&#10;User&#9;FILE&#9;das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user&#10;sec&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;F&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Security/FacebookAuthenticator.php&#10;secu&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;composer.json&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;.env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;USer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;home&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;hom&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;homepage&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;base&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/base.html.twig&#10;footer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;footer.cs&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;f&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;foo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/footer.html.twig&#10;footer.css&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;Micro&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/MicroPostController.php&#10;header&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/header.html.twig&#10;.e&#9;FILE&#9;file://C:/Users/Rita/PhpstormProjects/postgram/.env&#10;login.&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;app&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;log&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/LoginType.php&#10;lo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;reg&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;register&#9;null&#9;null&#10;securi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/SecurityController.php&#10;USerRegistra&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/UserRegistrationType.php&#10;register.h&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;UserCo&#9;null&#9;null&#10;App&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;secur&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;User.php&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;AppFi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;USer.php&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/UserController.php&#10;doctrine.y&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/doctrine.yaml&#10;webpack&#9;null&#9;null&#10;twig&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/twig.yaml&#10;twig.&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/routes/dev/twig.yaml" />
+    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/header.html.twig&#10;index&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/index.html.twig&#10;base&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/base.html.twig&#10;messa&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/messaging/messages.html.twig&#10;chat&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Service/Chat.php&#10;MicroPo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/MicroPostController.php&#10;sec&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;fra&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/framework.yaml&#10;services&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/services.yaml&#10;framewo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/framework.yaml&#10;raw&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/raw-post.html.twig&#10;blog&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/BlogController.php&#10;compo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;use&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;user&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/user-posts.html.twig&#10;access_token&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;logi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;face&#9;null&#9;null&#10;User&#9;FILE&#9;das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user&#10;F&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Security/FacebookAuthenticator.php&#10;secu&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;composer.json&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;.env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;USer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;home&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;hom&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;homepage&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;footer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;footer.cs&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;f&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;foo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/footer.html.twig&#10;footer.css&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;Micro&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/MicroPostController.php&#10;.e&#9;FILE&#9;file://C:/Users/Rita/PhpstormProjects/postgram/.env&#10;login.&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;app&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;log&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/LoginType.php&#10;lo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;reg&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;register&#9;null&#9;null&#10;securi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/SecurityController.php&#10;USerRegistra&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/UserRegistrationType.php&#10;register.h&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;UserCo&#9;null&#9;null&#10;App&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;secur&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;User.php&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;AppFi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony-01" />
@@ -755,7 +755,13 @@
       <workItem from="1547979131970" duration="4584000" />
       <workItem from="1547996549716" duration="21118000" />
       <workItem from="1548053149105" duration="199000" />
-      <workItem from="1548053492806" duration="3561000" />
+      <workItem from="1548053492806" duration="3873000" />
+      <workItem from="1548057659871" duration="1576000" />
+      <workItem from="1548063225409" duration="219000" />
+      <workItem from="1548065339287" duration="2253000" />
+      <workItem from="1548412539039" duration="2483000" />
+      <workItem from="1548434956927" duration="13000" />
+      <workItem from="1549358813051" duration="657000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1539693188591</created>
@@ -831,14 +837,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126882000" />
+    <option name="totallyTimeSpent" value="134395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18836713" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20117396" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994664" weight="0.32878152" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32878152" />
@@ -849,14 +855,14 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" weight="0.32984293" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.4989339" weight="0.32983193" />
-      <window_info anchor="bottom" x="0" y="55" width="1920" height="1025" id="Terminal" order="10" sideWeight="0.50054765" weight="0.38445377" />
+      <window_info anchor="bottom" x="0" y="55" width="1920" height="1025" id="Terminal" order="10" sideWeight="0.50054765" visible="true" weight="0.38445377" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.3264642" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32900432" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.2764141" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.2764141" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28784648" />
@@ -901,135 +907,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="footer &amp;&amp; facebook controller" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Repository/MicroPostRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/MicroPost.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/header.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="66" column="58" lean-forward="true" selection-start-line="66" selection-start-column="58" selection-end-line="66" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/notification/notifications.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/confirmation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/allusers.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/footer.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/css/footer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/homepage.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Security/UserProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.dist">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/blog/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FacebookController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/GoogleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Security/FacebookAuthenticator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="77" column="13" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1063,13 +940,6 @@
         <state relative-caret-position="-255" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="215" lean-forward="true" selection-start-line="215" selection-end-line="215" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/build/css/app.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1087,20 +957,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/css/notifications.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/build/css/messages.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1108,13 +964,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-442">
           <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/NotificationController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1128,20 +977,6 @@
     <entry file="file://$PROJECT_DIR$/src/Event/UserSubscriber.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="107" column="24" lean-forward="true" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FollowingController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/micro-post/user-posts.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -1149,6 +984,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Chat/Chat.php" />
     <entry file="file://$PROJECT_DIR$/templates/micro-post/post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -1168,55 +1004,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
+        <state relative-caret-position="629">
           <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/micro-post/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" selection-start-line="49" selection-end-line="61" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MicroPostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="129" column="72" selection-start-line="129" selection-start-column="72" selection-end-line="129" selection-end-column="72" />
-          <folding>
-            <element signature="e#115#140#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/LikesController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/Chat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="62" column="35" selection-start-line="62" selection-start-column="35" selection-end-line="62" selection-end-column="35" />
-          <folding>
-            <element signature="e#112#144#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Chat/Chat.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="22" lean-forward="true" selection-end-line="17" selection-end-column="15" />
-          <folding>
-            <element signature="e#6#34#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,10 +1016,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FacebookController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/Handler/PdoSessionHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190121081105.php" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/MicroPostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-178">
+          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190118202319.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Migrations/Version20190118202111.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-start-column="1" selection-end-line="46" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/react/socket/src/TcpServer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="163" column="40" selection-start-line="163" selection-start-column="40" selection-end-line="163" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/Chat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bin/chatServer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="289">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding>
             <element signature="e#6#34#0#PHP" expanded="true" />
           </folding>
@@ -1239,11 +1106,119 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/messaging/messages.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="10" selection-start-line="50" selection-start-column="10" selection-end-line="50" selection-end-column="10" />
+        <state relative-caret-position="374">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/micro-post/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/BlogController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/LikesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/FollowingController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/NotificationController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
           <folding>
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#116#144#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/homepage.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/post.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/blog/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/build/css/animation.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/post_likes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/MicroPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/build/css/homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3655">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/build/css/header.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1725" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/build/css/notifications.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
         </state>
       </provider>
     </entry>

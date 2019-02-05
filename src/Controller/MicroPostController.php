@@ -97,12 +97,13 @@ class MicroPostController extends Controller
         $currentUser = $tokenStorage->getToken()->getUser();
         $repo = $this->getDoctrine()->getRepository(User::class);
 
-        $users = $repo->findAllWithMoreThan5PostsExceptUser($currentUser);
+//        $users = $repo->findAllWithMoreThan5PostsExceptUser($currentUser);
         $usersToFollow = [];
+        $users = [];
 
         if ($currentUser instanceof User) {
             $posts = $this->microPostRepository->findAllByUsers($currentUser->getFollowing());
-
+            $users = $userRepository->findAllWithMoreThan5PostsExceptUser($currentUser);
             $usersToFollow = count($posts) === 0 ? $userRepository->findAllWithMoreThan5PostsExceptUser($currentUser): [];
 
         } else {
