@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="400632a9-e263-4b92-bd1e-49578da4aca9" name="Default Changelist" comment="footer &amp;&amp; facebook controller">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/chatServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/bin/chatServer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
@@ -108,9 +109,9 @@
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="6" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.8" value="4" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="45" />
+          <entry key="project.opened" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -124,7 +125,7 @@
           <entry key="dist" value="5" />
           <entry key="env" value="5" />
           <entry key="following" value="1" />
-          <entry key="gitignore" value="6" />
+          <entry key="gitignore" value="7" />
           <entry key="html" value="1" />
           <entry key="js" value="4" />
           <entry key="json" value="6" />
@@ -148,7 +149,7 @@
           <entry key="JSON" value="7" />
           <entry key="JavaScript" value="4" />
           <entry key="PHP" value="136" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="Twig" value="107" />
           <entry key="YAML" value="22" />
           <entry key="yarn.lock" value="1" />
@@ -289,16 +290,23 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/build/css/header.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/build/css/notifications.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1725" />
+            <state relative-caret-position="298">
+              <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/build/css/notifications.css">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -315,17 +323,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
+            <state relative-caret-position="1734">
               <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/post_likes">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -407,7 +406,6 @@
         <option value="$PROJECT_DIR$/public/build/css/footer.css" />
         <option value="$PROJECT_DIR$/templates/blog/homepage.html.twig" />
         <option value="$PROJECT_DIR$/src/Security/UserProvider.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Controller/GoogleController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
@@ -435,6 +433,7 @@
         <option value="$PROJECT_DIR$/src/Controller/MicroPostController.php" />
         <option value="$PROJECT_DIR$/bin/chatServer.php" />
         <option value="$PROJECT_DIR$/templates/messaging/messages.html.twig" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -556,7 +555,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
+    <option name="x" value="1843" />
+    <option name="width" value="1910" />
     <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -574,29 +574,6 @@
             <path>
               <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
               <item name="postgram" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postgram" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postgram" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postgram" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
-              <item name="postgram" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="postgram" type="b2602c69:ProjectViewProjectNode" />
@@ -664,7 +641,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/header.html.twig&#10;index&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/index.html.twig&#10;base&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/base.html.twig&#10;messa&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/messaging/messages.html.twig&#10;chat&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Service/Chat.php&#10;MicroPo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/MicroPostController.php&#10;sec&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;fra&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/framework.yaml&#10;services&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/services.yaml&#10;framewo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/framework.yaml&#10;raw&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/raw-post.html.twig&#10;blog&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/BlogController.php&#10;compo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;use&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;user&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/user-posts.html.twig&#10;access_token&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;logi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;face&#9;null&#9;null&#10;User&#9;FILE&#9;das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user&#10;F&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Security/FacebookAuthenticator.php&#10;secu&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;composer.json&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;.env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;USer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;home&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;hom&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;homepage&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;footer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;footer.cs&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;f&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;foo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/footer.html.twig&#10;footer.css&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;Micro&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/MicroPostController.php&#10;.e&#9;FILE&#9;file://C:/Users/Rita/PhpstormProjects/postgram/.env&#10;login.&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;app&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;log&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/LoginType.php&#10;lo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;reg&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;register&#9;null&#9;null&#10;securi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/SecurityController.php&#10;USerRegistra&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/UserRegistrationType.php&#10;register.h&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;UserCo&#9;null&#9;null&#10;App&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;secur&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;User.php&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;AppFi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php" />
+    <property name="SearchEverywhereHistoryKey" value="git&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.gitignore&#10;header&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/header.html.twig&#10;index&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/index.html.twig&#10;base&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/base.html.twig&#10;messa&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/messaging/messages.html.twig&#10;chat&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Service/Chat.php&#10;MicroPo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/MicroPostController.php&#10;sec&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;fra&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/framework.yaml&#10;services&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/services.yaml&#10;framewo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/framework.yaml&#10;raw&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/raw-post.html.twig&#10;blog&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/BlogController.php&#10;compo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;use&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;user&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/micro-post/user-posts.html.twig&#10;access_token&#9;null&#9;null&#10;login&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;logi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;face&#9;null&#9;null&#10;User&#9;FILE&#9;das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user&#10;F&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Security/FacebookAuthenticator.php&#10;secu&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;composer.json&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/composer.json&#10;.env&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/.env&#10;USer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php&#10;home&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;hom&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;homepage&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/homepage.html.twig&#10;footer&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;footer.cs&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;f&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;foo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/footer.html.twig&#10;footer.css&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/public/build/css/footer.css&#10;Micro&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/MicroPostController.php&#10;.e&#9;FILE&#9;file://C:/Users/Rita/PhpstormProjects/postgram/.env&#10;login.&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;app&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;log&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/LoginType.php&#10;lo&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/security/login.html.twig&#10;reg&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;register&#9;null&#9;null&#10;securi&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Controller/SecurityController.php&#10;USerRegistra&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Form/UserRegistrationType.php&#10;register.h&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/templates/blog/register.html.twig&#10;UserCo&#9;null&#9;null&#10;App&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/DataFixtures/AppFixtures.php&#10;secur&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/config/packages/security.yaml&#10;User.php&#9;FILE&#9;file:///home/raul/PhpstormProjects/postgram/src/Entity/User.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../symfony-01" />
@@ -762,6 +739,7 @@
       <workItem from="1548412539039" duration="2483000" />
       <workItem from="1548434956927" duration="13000" />
       <workItem from="1549358813051" duration="657000" />
+      <workItem from="1549361073406" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1539693188591</created>
@@ -837,14 +815,15 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134395000" />
+    <option name="totallyTimeSpent" value="135197000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20117396" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20330843" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4994664" weight="0.32878152" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32878152" />
@@ -907,13 +886,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="footer &amp;&amp; facebook controller" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/league/oauth2-client/src/Provider/AbstractProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -1073,13 +1045,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/user" />
     <entry file="file://$PROJECT_DIR$/vendor/react/socket/src/TcpServer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
@@ -1166,6 +1132,7 @@
     <entry file="file://$PROJECT_DIR$/templates/blog/header.html.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/post_likes" />
     <entry file="file://$PROJECT_DIR$/templates/blog/homepage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
@@ -1182,10 +1149,20 @@
     <entry file="file://$PROJECT_DIR$/public/build/css/animation.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="das://63247c8b-b3db-4970-869e-5dc2ac0bf497/schema/postgram/table/post_likes">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/public/build/css/header.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/build/css/homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3655">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1734">
+          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1196,29 +1173,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="107" column="24" selection-start-line="107" selection-start-column="24" selection-end-line="107" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/css/homepage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3655">
-          <caret line="215" selection-start-line="215" selection-end-line="215" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/build/css/header.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1725" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/build/css/notifications.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+        <state relative-caret-position="298">
+          <caret line="55" column="1" lean-forward="true" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
