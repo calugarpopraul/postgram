@@ -107,6 +107,11 @@ class User implements AdvancedUserInterface, \Serializable
      */
     private $facebookId;
 
+    /**
+     * @ORM\OneToOne(targetEntity="App\Entity\Psid", mappedBy="user")
+     */
+    private $psid;
+
 //    /**
 //     * @ORM\Column(type="datetime")
 //     */
@@ -180,6 +185,7 @@ class User implements AdvancedUserInterface, \Serializable
             $this->password,
             $this->enabled) = unserialize($serialized);
     }
+
 
     /**
      * @return mixed
